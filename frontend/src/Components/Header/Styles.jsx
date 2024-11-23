@@ -64,4 +64,79 @@ export const LinksContents = styled.div`
             cursor: pointer;
         }
     }
+
+    
+`
+
+export const ulContainer = styled.div`
+
+    .icon {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    @media (max-width: 724px) {
+        position: fixed;
+        top: 0px;
+        right: -270px;
+        height: 100vh;
+        width: 270px;
+        padding: 0;
+        transition: right 1990ms ease;
+        background-color: #0A0A0A;
+        font-family: "JetBrains Mono", serif;
+        font-size: 22px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            height: 100%;
+        }
+
+        &.open {
+            right: 0;
+        }
+
+        .icon {
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            margin-top: 20px;
+
+            svg {
+                color: #382AB6;
+            }
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+    }
+`
+
+export const menuBtn = styled.div`
+    display: none;
+
+    svg {
+        font-size: 48px;
+        margin: 50px;
+    }
+
+    @media (max-width: 724px) {
+        display: block;
+    }
 `
