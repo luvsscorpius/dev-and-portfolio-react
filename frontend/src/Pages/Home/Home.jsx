@@ -3,6 +3,7 @@ import * as H from './Styles'
 import linkedinLogo from '../../assets/img/linkedinLogo.png'
 import githubLogo from '../../assets/img/githubLogo.png'
 import whatsappLogo from '../../assets/img/whatsappLogo.png'
+import profilePhoto from '../../assets/img/profilePhoto.png'
 
 export const Home = () => {
     return (
@@ -25,7 +26,7 @@ export const Home = () => {
                     <button>Baixar Curriculo</button>
 
                     <div>
-                        <img src={linkedinLogo} alt="Linkedin Logo" />                        
+                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>                        
                         <img src={githubLogo} alt="Github Logo" />
                         <img src={whatsappLogo} alt="Whatsapp Logo" />
                     </div>
@@ -33,7 +34,7 @@ export const Home = () => {
             </H.mainContent>
 
             <H.mainImage>
-                teste
+                <img src={profilePhoto} alt="Foto pessoal" />
             </H.mainImage>
         </H.main>
     )
