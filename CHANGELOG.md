@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.2.0...v1.3.0) (2024-12-02)
+
+
+### Features
+
+* **homepage:** creating main content div ([dd6fde9](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/dd6fde98fe08e9a6d712b90414181cb59c9e71f2))
+* **homepage:** developing mobile resposive design ([13fa6b3](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/13fa6b304f4600e7506515f4b62effbbc0fb7f99))
+
 # [1.2.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.1.0...v1.2.0) (2024-11-23)
 
 
