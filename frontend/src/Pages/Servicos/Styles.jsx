@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const main = styled.main`
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 `
 
 export const mainContent = styled.div`
@@ -16,10 +12,19 @@ export const mainContent = styled.div`
     flex-direction: column;
     background-color: #0A0A0A;
     color: #fff;
+
+    @media (max-width: 724px) {
+        height: auto;
+        padding: 20px;
+    }
 `
 
 export const servicosTitleContent = styled.div`
     font-family: "JetBrains Mono", serif;
+
+    @media (max-width: 724px) {
+        margin: 10px;
+    }
 `
 
 export const servicosContentFlow = styled.div`
@@ -54,5 +59,11 @@ export const servicosContentFlow = styled.div`
 
     .dev {
         width: 160px;
+    }
+
+    @media (max-width: 724px) {
+        display: flex;
+        flex-direction: column;
+
     }
 `
