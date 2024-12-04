@@ -1,3 +1,13 @@
+# [1.4.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.3.0...v1.4.0) (2024-12-04)
+
+
+### Features
+
+* **react router:** implementing routes ([4950108](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/495010831ce4d2c6b80b80d5c3095c65a6ce59ea))
+* **servicospage:** developing servicos titleContent & servicosContentFlow ([a51862d](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/a51862d2786b3f68bcd5fee34b18beb144ff26d4))
+* **servicospage:** implementing mobile responsive design ([db0cf27](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/db0cf27faa4ebc712e50ba590af5dceda42626f8))
+* **servicos:** starting servicos page ([be8369a](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/be8369a97c680a694f30dcf581c639905b366387))
+
 # [1.3.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.2.0...v1.3.0) (2024-12-02)
 
 
