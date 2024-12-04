@@ -64,6 +64,5 @@ export const servicosContentFlow = styled.div`
     @media (max-width: 724px) {
         display: flex;
         flex-direction: column;
-
     }
 `
