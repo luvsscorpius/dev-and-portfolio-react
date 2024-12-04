@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.4.0...v1.5.0) (2024-12-04)
+
+
+### Features
+
+* **servicospage:** sla ([1f1786f](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/1f1786fa12e66ca19073a074046b04a817f583d3))
+
 # [1.4.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.3.0...v1.4.0) (2024-12-04)
 
 
