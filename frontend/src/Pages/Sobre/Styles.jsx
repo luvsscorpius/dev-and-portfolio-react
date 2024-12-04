@@ -44,4 +44,31 @@ export const infoContainer = styled.div`
     height: 500px;
     width: 50%;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+    .pContainer {
+        width: 97%;
+        height: 65%;
+        background-color: #1D1D1D;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+
+        p {
+            width: 97%;
+            margin: 10px;
+            font-size: 18px;
+            color: #eee;
+            text-align: justify;
+            font-family: "JetBrains Mono", serif;
+        }
+    }
 `
+
