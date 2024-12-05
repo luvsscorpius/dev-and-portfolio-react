@@ -38,6 +38,12 @@ export const linksContainer = styled.div`
         color: #fff;
         transition: 0.6s ease;
     }
+
+    button.active {
+        background-color: #382AB6;
+        color: #fff;
+        transition: 0.6s ease;
+    }
 `
 
 export const infoContainer = styled.div`

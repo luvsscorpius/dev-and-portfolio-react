@@ -21,10 +21,10 @@ export const Sobre = () => {
     <main>
         <M.mainContent>
             <M.linksContainer>
-                <button value='experiencia' onClick={(e) => changeComponent(e.target.value)}>Experiência</button>
-                <button value='educacao' onClick={(e) => changeComponent(e.target.value)} >Educação</button>
-                <button value='habilidades' onClick={(e) => changeComponent(e.target.value)}>Habilidades</button>
-                <button value='sobre' onClick={(e) => changeComponent(e.target.value)}>Sobre mim</button>
+                <button value='experiencia' onClick={(e) => changeComponent(e.target.value)} className={currentComponent === 'experiencia' ? 'active' : ''} >Experiência</button>
+                <button value='educacao' onClick={(e) => changeComponent(e.target.value)} className={currentComponent === 'educacao' ? 'active' : ''} >Educação</button>
+                <button value='habilidades' onClick={(e) => changeComponent(e.target.value)} className={currentComponent === 'habilidades' ? 'active' : ''}>Habilidades</button>
+                <button value='sobre' onClick={(e) => changeComponent(e.target.value)} className={currentComponent === 'sobre' ? 'active' : ''} >Sobre mim</button>
             </M.linksContainer>
 
             <M.infoContainer>
