@@ -49,7 +49,10 @@ export const infoContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
-
+    
+    h1 {
+        font-family: Poppins, sans-serif;
+    }
 
     .pContainer {
         width: 97%;
