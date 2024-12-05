@@ -11,14 +11,18 @@ export const Sobre = () => {
         habilidades: {h1: "Hard skills/Soft skills", p1: "Tenho experiência em desenvolvimento front-end com React, JavaScript e CSS-in-JS (styled-components), criando interfaces responsivas e acessíveis. Sou habilidoso no gerenciamento de estado com Context API e hooks, e tenho experiência em Node.js para criar APIs escaláveis com Express.js e integração com MongoDB. Também tenho conhecimento em autenticação com JWT, proteção de rotas e deploy de aplicações usando Vercel e MongoDB Atlas.", p2: "Sou organizado, focado e sempre em busca de aprendizado contínuo. Tenho forte habilidade de trabalho em equipe, boa comunicação e colaboração em ambientes ágeis. Sou proativo na resolução de problemas, comprometido com prazos e qualidade de entrega, e atento às necessidades do usuário final, criando soluções digitais intuitivas e eficientes."},
         }
 
+    const changeComponent = (e) => {
+        setCurrentComponent(e)
+    }
+
   return (
     <main>
         <M.mainContent>
             <M.linksContainer>
-                <button>Experiência</button>
-                <button>Educação</button>
-                <button>Habilidades</button>
-                <button>Sobre mim</button>
+                <button value='experiencia' onClick={(e) => changeComponent(e.target.value)}>Experiência</button>
+                <button value='educacao' onClick={(e) => changeComponent(e.target.value)} >Educação</button>
+                <button value='habilidades' onClick={(e) => changeComponent(e.target.value)}>Habilidades</button>
+                <button value='sobre' onClick={(e) => changeComponent(e.target.value)}>Sobre mim</button>
             </M.linksContainer>
 
             <M.infoContainer>
