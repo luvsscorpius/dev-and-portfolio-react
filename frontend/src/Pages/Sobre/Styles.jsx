@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const mainContent = styled.div`
-    border: 1px solid blue;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,12 +8,19 @@ export const mainContent = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: #0A0A0A;
+
+    @media (max-width: 724px) {
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+        gap: 0;
+    }
 `
 
 export const linksContainer = styled.div`
     height: 500px;
     width: 400px;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,12 +50,22 @@ export const linksContainer = styled.div`
         color: #fff;
         transition: 0.6s ease;
     }
+
+    @media (max-width: 724px) {
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        padding: 20px;
+
+        button {
+            width: 90%;
+        }
+    }
 `
 
 export const infoContainer = styled.div`
     height: 500px;
     width: 50%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +74,7 @@ export const infoContainer = styled.div`
     
     h1 {
         font-family: Poppins, sans-serif;
+        color: #fff;
     }
 
     .pContainer {
@@ -78,6 +95,12 @@ export const infoContainer = styled.div`
             text-align: justify;
             font-family: "JetBrains Mono", serif;
         }
+    }
+
+    @media (max-width: 724px) {
+        width: 100%;
+        height: auto;
+        padding: 10px;
     }
 `
 
