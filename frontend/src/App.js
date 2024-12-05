@@ -5,6 +5,7 @@ import { Home } from './Pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import { Servicos } from './Pages/Servicos/Servicos';
 import { Sobre } from './Pages/Sobre/Sobre';
+import { Projetcs } from './Pages/Projects/Projetcs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/servicos' element={<Servicos />}/>
           <Route path='/sobre' element={<Sobre />}/>
+          <Route path='/projetos' element={<Projetcs />}/>
         </Routes>
         <GlobalStyle />
       </Router>
