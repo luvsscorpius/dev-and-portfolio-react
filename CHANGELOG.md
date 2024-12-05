@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.5.0...v1.6.0) (2024-12-05)
+
+
+### Features
+
+* **sobrepage:** changing sobrePage array to a const ([2dcc158](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2dcc1582324bb14804fad1c482db2af65c35c38d))
+* **sobrepage:** developing responsive design ([1fc40fb](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/1fc40fb7f4cf89a4991d67c8052200b997985288))
+* **sobrepage:** finishing const component with info about myself ([23fd9a4](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/23fd9a4e6bc196c3a8d30ecc70474e0e0d994b16))
+* **sobrepage:** implementing a logic to put a class active on the button that was clicked ([9d1bf59](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/9d1bf595d98732568012f1ff51671323a44daf76))
+* **sobrepage:** starting to develop changeComponent function ([5370ab0](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/5370ab0ea5f80c692235c080ee98b64cf9dd3e39))
+* **sobrepage:** starting to develop sobre page ([c7a7a99](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/c7a7a99fbf00ef069d5d23d2b2aa52e416d050dc))
+* **sobrepage:** starting to develop states to hold information about each section ([2d957f1](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2d957f125249d9cf9422021aeaa8dd2e2d2eef0a))
+* **sobrepage:** styling h1 on infoContainer - font-family: Poppins ([58be17c](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/58be17c814946ea08ce55a49e635fa06831bbb46))
+
 # [1.5.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.4.0...v1.5.0) (2024-12-04)
 
 
