@@ -52,6 +52,7 @@ export const descriptionContainer = styled.div`
       text-align: justify;
       padding: 5px;
       color: #bbb;
+      overflow-y: scroll;
     }
     
     .iconsContent {
