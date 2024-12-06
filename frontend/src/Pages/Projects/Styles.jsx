@@ -5,7 +5,6 @@ import styled from "styled-components";
 export const main = styled.main` 
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: "JetBrains Mono", serif;
   background-color: #0A0A0A;
 `
@@ -15,13 +14,11 @@ export const mainContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 `
 
 export const descriptionContainer = styled.div`
     width: 50%;
-    gap: 10px;
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -100,6 +97,7 @@ export const descriptionContainer = styled.div`
 
       img {
         width: 39px;
+        height: 39px;
       }
     }
 `
@@ -107,6 +105,10 @@ export const descriptionContainer = styled.div`
 export const imageContainer = styled.div`
     width: 100%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
 
     hr {
       width: 98.5%;
@@ -116,6 +118,7 @@ export const imageContainer = styled.div`
 
     img {
         width: 100%;
+        border-radius: 5px;
     }
 `
 
