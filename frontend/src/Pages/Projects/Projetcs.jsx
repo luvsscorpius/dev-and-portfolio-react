@@ -2,6 +2,10 @@ import React from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import mrmix from "../../assets/img/mrmix.png"
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import deployIcon from "../../assets/img/deployIcon.png"
+import gitHubIcon from "../../assets/img/githubLogo.png"
 
 export const Projetcs = () => {
     const projects = [
@@ -39,13 +43,33 @@ export const Projetcs = () => {
 
                     <hr />
 
-                    <a href={projects[0].deploy} target="_blank" rel="noopener noreferrer">
-                        Ver Projeto
-                    </a>
+                    <div className="linksContainer">
+                    {/* href={projects[0].deploy} */}
+                        <span>
+                            <img src={deployIcon} alt="" />
+                        </span>
+
+                        <span>
+                            <img src={gitHubIcon} alt="" />
+                        </span>
+                    
+                    </div>
                 </P.descriptionContainer>
 
                 <P.imageContainer>
                     <img src={projects[0].images[0]} alt={projects[0].title} />
+
+                    <hr />
+
+                    <P.arrowsContainer>
+                        <div className="arrowLeftContainer">
+                            <IoIosArrowBack size={32} />
+                        </div>
+
+                        <div className="arrowRightContainer">
+                            <IoIosArrowForward size={32} />
+                        </div>
+                    </P.arrowsContainer>
                 </P.imageContainer>
             </P.mainContent>
         </P.main>
