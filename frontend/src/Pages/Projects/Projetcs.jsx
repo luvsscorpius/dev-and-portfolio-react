@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
@@ -32,23 +32,40 @@ export const Projetcs = () => {
 
     ]
 
+    // State para controlar os projetos
+    const [currentIndex, setCurrentIndex] = useState(1)
+
+    // Funcao para voltar projeto
+    const handlePrevious = () => {
+        if (currentIndex >= 0) {
+            setCurrentIndex(currentIndex - 1)
+        }
+    }
+
+    // Funçao para ir para o proximo projeto
+    const handleNext = () => {
+        if (currentIndex < projects.length - 1) {
+            setCurrentIndex(currentIndex + 1)
+        }
+    }
+
     return (
         <P.main>
             <P.mainContent>
                 <P.descriptionContainer>
                     <div className="numberContent">
-                        <h1>{projects[1].id}</h1>
+                        <h1>{projects[currentIndex].id}</h1>
                     </div>
                     <div className="titleContent">
-                        <h2>{projects[1].title}</h2>
+                        <h2>{projects[currentIndex].title}</h2>
                     </div>
                     <div className="descriptionContent">
-                        <p>{projects[1].description}</p>
+                        <p>{projects[currentIndex].description}</p>
                     </div>
 
                     <div className="iconsContent">
                         {/* utilizando projetcs.icons.map para mapear dentro do objeto dentro do array icons */}
-                        {projects[1].icons.map((icon, index) => (
+                        {projects[currentIndex].icons.map((icon, index) => (
                             <img src={icon} key={index} />
                         ))}
                     </div>
@@ -69,17 +86,17 @@ export const Projetcs = () => {
                 </P.descriptionContainer>
 
                 <P.imageContainer>
-                    <img src={projects[1].images[0]} alt={projects[1].title} />
+                    <img src={projects[currentIndex].images[0]} alt={projects[currentIndex].title} />
 
                     <hr />
 
                     <P.arrowsContainer>
-                        <div className="arrowLeftContainer">
-                            <IoIosArrowBack size={32} />
+                        <div className="arrowLeftContainer" >
+                            <IoIosArrowBack size={32} onClick={(e) => handlePrevious(e)} />
                         </div>
 
                         <div className="arrowRightContainer">
-                            <IoIosArrowForward size={32} />
+                            <IoIosArrowForward size={32} onClick={(e) => handleNext(e)} />
                         </div>
                     </P.arrowsContainer>
                 </P.imageContainer>

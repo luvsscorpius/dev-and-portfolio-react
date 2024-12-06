@@ -1,12 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Project Template 
+
+const containerAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`
 
 export const main = styled.main` 
   display: flex;
   justify-content: center;
   font-family: "JetBrains Mono", serif;
   background-color: #0A0A0A;
+
 `
 
 export const mainContent = styled.div`
@@ -15,6 +26,7 @@ export const mainContent = styled.div`
     flex-direction: row;
     justify-content: center;
     height: 100vh;
+    animation: ${containerAnimation} 300ms ease-in;
 `
 
 export const descriptionContainer = styled.div`
@@ -22,7 +34,9 @@ export const descriptionContainer = styled.div`
     display: flex;
     padding: 10px;
     flex-direction: column;
+    justify-content: center;
     height: auto;
+    gap: 5px;
 
     .numberContent {
       display: flex;
@@ -118,7 +132,8 @@ export const imageContainer = styled.div`
 
     img {
         width: 100%;
-        border-radius: 5px;
+        border-radius: 15px;
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
 `
 
