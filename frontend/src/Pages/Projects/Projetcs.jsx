@@ -3,6 +3,8 @@ import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import mrmix from "../../assets/img/mrmix.png"
+import mrmixModal from "../../assets/img/mrmixModal.png"
+import mrmixCart from "../../assets/img/mrmixCart.png"
 import chicCloset from "../../assets/img/chicCloset.png"
 import chicClosetCart from "../../assets/img/chicClosetCart.png"
 import { IoIosArrowBack } from "react-icons/io";
@@ -18,7 +20,7 @@ export const Projetcs = () => {
             title: "Frontend e-commerce Mr. Mix",
             description: "Eu desenvolvi a parte visual desse e-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
             icons: [javascriptIcon],
-            images: [mrmix],
+            images: [mrmix, mrmixModal, mrmixCart],
             repo: "https://github.com/luvsscorpius/Mr-Mix",
             deploy: "https://mr-mix.netlify.app/"
         },
@@ -94,11 +96,11 @@ export const Projetcs = () => {
                 </P.descriptionContainer>
 
                 <P.imageContainer>
-                    <Carousel value={projects[currentIndex].images} numVisible={1} numScroll={3} responsiveOptions={[
+                    <Carousel value={projects[currentIndex].images} numVisible={1} numScroll={1} responsiveOptions={[
                     { breakpoint: '1024px', numVisible: 1 },
                     { breakpoint: '768px', numVisible: 1 },
                     { breakpoint: '560px', numVisible: 1 }
-                ]} itemTemplate={projectTemplate} autoplayInterval={10000}  /> 
+                ]} itemTemplate={projectTemplate} autoplayInterval={7000}  /> 
 
                     <hr />
 
