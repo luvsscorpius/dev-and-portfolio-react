@@ -26,7 +26,6 @@ export const mainContent = styled.div`
     flex-direction: row;
     justify-content: center;
     height: 100vh;
-    animation: ${containerAnimation} 300ms ease-in;
 `
 
 export const descriptionContainer = styled.div`
@@ -123,6 +122,26 @@ export const imageContainer = styled.div`
     justify-content: center;
     gap: 10px;
     flex-direction: column;
+
+    .p-carousel .p-carousel-prev,
+    .p-carousel .p-carousel-next {
+      background-color: #1d1d1d;
+      height: 50px;
+      width: 50px;
+      font-size: 3rem;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .p-carousel .p-carousel-prev:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .p-carousel .p-carousel-next:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
 
     hr {
       width: 98.5%;

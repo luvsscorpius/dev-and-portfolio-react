@@ -4,10 +4,12 @@ import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import mrmix from "../../assets/img/mrmix.png"
 import chicCloset from "../../assets/img/chicCloset.png"
+import chicClosetCart from "../../assets/img/chicClosetCart.png"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import deployIcon from "../../assets/img/deployIcon.png"
 import gitHubIcon from "../../assets/img/githubLogo.png"
+import { Carousel } from 'primereact/carousel';
 
 export const Projetcs = () => {
     const projects = [
@@ -25,7 +27,7 @@ export const Projetcs = () => {
             title: "Frontend e-commerce ChicCloset",
             description: "Este é um projeto de e-commerce desenvolvido com React, criado para funcionar como uma loja online, onde coloquei os meus conhecimentos de React em prática, os que foram usados nesse projeto foram, styled-components para a estilização de componentes, useContext para o acesso de funções de diferentes componentes, useNavigate e React-dom-Router para navegar para diferentes rotas entre a aplicação.",
             icons: [javascriptIcon, reactLogo],
-            images: [chicCloset],
+            images: [chicCloset, chicClosetCart],
             repo: "https://github.com/luvsscorpius/chic-closet",
             deploy: "https://luvsscorpius.github.io/chic-closet/#/"
         },
@@ -49,9 +51,15 @@ export const Projetcs = () => {
         }
     }
 
+    const projectTemplate = (image) => {
+        return (
+                <img src={image} />
+        )
+    }
+
     return (
         <P.main>
-            <P.mainContent>
+            <P.mainContent >
                 <P.descriptionContainer>
                     <div className="numberContent">
                         <h1>{projects[currentIndex].id}</h1>
@@ -86,7 +94,11 @@ export const Projetcs = () => {
                 </P.descriptionContainer>
 
                 <P.imageContainer>
-                    <img src={projects[currentIndex].images[0]} alt={projects[currentIndex].title} />
+                    <Carousel value={projects[currentIndex].images} numVisible={1} numScroll={3} responsiveOptions={[
+                    { breakpoint: '1024px', numVisible: 1 },
+                    { breakpoint: '768px', numVisible: 1 },
+                    { breakpoint: '560px', numVisible: 1 }
+                ]} itemTemplate={projectTemplate} autoplayInterval={10000}  /> 
 
                     <hr />
 
