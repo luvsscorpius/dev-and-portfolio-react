@@ -18,6 +18,10 @@ export const main = styled.main`
   font-family: "JetBrains Mono", serif;
   background-color: #0A0A0A;
 
+  @media (max-width: 768px) {
+    align-items: start;
+    height: auto;
+  }
 `
 
 export const mainContent = styled.div`
@@ -26,6 +30,12 @@ export const mainContent = styled.div`
     flex-direction: row;
     justify-content: center;
     height: 100vh;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: start;
+      height: auto;
+    }
 `
 
 export const descriptionContainer = styled.div`
@@ -114,6 +124,12 @@ export const descriptionContainer = styled.div`
         height: 39px;
       }
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
 `
 
 export const imageContainer = styled.div`
@@ -154,6 +170,10 @@ export const imageContainer = styled.div`
         width: 100%;
         border-radius: 15px;
         transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: start;
     }
 `
 

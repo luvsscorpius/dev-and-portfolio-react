@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import mrmix from "../../assets/img/mrmix.png"
+import mrmixMobile from "../../assets/img/mrmixMobile.png"
 import mrmixModal from "../../assets/img/mrmixModal.png"
+import mrmixModalMobile from "../../assets/img/mrmixModalMobile.png"
 import mrmixCart from "../../assets/img/mrmixCart.png"
+import mrmixCartMobile from "../../assets/img/mrmixCartMobile.png"
 import chicCloset from "../../assets/img/chicCloset.png"
 import chicClosetCart from "../../assets/img/chicClosetCart.png"
 import { IoIosArrowBack } from "react-icons/io";
@@ -21,6 +24,7 @@ export const Projetcs = () => {
             description: "Eu desenvolvi a parte visual desse e-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
             icons: [javascriptIcon],
             images: [mrmix, mrmixModal, mrmixCart],
+            imagesMobile: [mrmixMobile, mrmixModalMobile, mrmixCartMobile],
             repo: "https://github.com/luvsscorpius/Mr-Mix",
             deploy: "https://mr-mix.netlify.app/"
         },
@@ -55,7 +59,7 @@ export const Projetcs = () => {
 
     const projectTemplate = (image) => {
         return (
-                <img src={image} />
+            <img src={image} />
         )
     }
 
@@ -97,10 +101,10 @@ export const Projetcs = () => {
 
                 <P.imageContainer>
                     <Carousel value={projects[currentIndex].images} numVisible={1} numScroll={1} responsiveOptions={[
-                    { breakpoint: '1024px', numVisible: 1 },
-                    { breakpoint: '768px', numVisible: 1 },
-                    { breakpoint: '560px', numVisible: 1 }
-                ]} itemTemplate={projectTemplate} autoplayInterval={7000}  /> 
+                    { breakpoint: '1024px', numVisible: 1, numScroll: 2 },
+                    { breakpoint: '768px', numVisible: 1, numScroll: 2 },
+                    { breakpoint: '560px', numVisible: 1, numScroll: 2 }
+                ]} itemTemplate={projectTemplate} autoplayInterval={5000}  /> 
 
                     <hr />
 
