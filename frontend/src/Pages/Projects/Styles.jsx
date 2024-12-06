@@ -2,9 +2,17 @@ import styled from "styled-components";
 
 // Project Template 
 
+export const main = styled.main` 
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", serif;
+`
+
 export const mainContent = styled.div`
     border: 1px solid red;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,9 +20,38 @@ export const mainContent = styled.div`
     height: 100vh;
 `
 
-export const descriptionContent = styled.div`
+export const descriptionContainer = styled.div`
     width: 50%;
     border: 1px solid red;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .numberContent {
+      display: flex;
+      align-items: center;
+    }
+    
+    .iconsContent {
+      img {
+        width: 100px;
+      }
+    }
+  
+    h1 {
+      font-size: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+    }
+    
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+    }
 `
 
 export const imageContainer = styled.div`
@@ -24,34 +61,3 @@ export const imageContainer = styled.div`
         width: 100%;
     }
 `
-
-/* Estilo das setas */
-export const carouselArrow = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  &.prev {
-    left: -100px;
-  }
-
-  &.next {
-    right: -200px;
-  }
-`;
