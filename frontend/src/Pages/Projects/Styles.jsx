@@ -129,6 +129,11 @@ export const descriptionContainer = styled.div`
       width: 100%;
       display: flex;
       justify-content: start;
+
+      .iconsContent {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 `
 

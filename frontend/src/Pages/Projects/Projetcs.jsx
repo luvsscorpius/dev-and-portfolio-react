@@ -72,6 +72,12 @@ export const Projetcs = () => {
         )
     }
 
+    const projectTemplateIcons = (image) => {
+        return (
+            <img src={image} alt='Icones'/>
+        )
+    }
+
     return (
         <P.main>
             <P.mainContent >
