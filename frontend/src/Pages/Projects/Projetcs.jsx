@@ -74,7 +74,7 @@ export const Projetcs = () => {
     ]
 
     // State para controlar os projetos
-    const [currentIndex, setCurrentIndex] = useState(1)
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     // Funcao para voltar projeto
     const handlePrevious = () => {
