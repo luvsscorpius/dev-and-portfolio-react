@@ -2,17 +2,21 @@ import React, { useState } from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
+import nodeJsLogo from "../../assets/img/nodeJsLogo.png"
+import mongoDbLogo from "../../assets/img/mongoDbLogo.png"
 import mrmix from "../../assets/img/mrmix.png"
 import mrmixModal from "../../assets/img/mrmixModal.png"
 import mrmixCart from "../../assets/img/mrmixCart.png"
 import chicCloset from "../../assets/img/chicCloset.png"
 import chicClosetCart from "../../assets/img/chicClosetCart.png"
+import taskmap from "../../assets/img/taskmap.png"
+import taskmapCadastro from "../../assets/img/taskmapCadastro.png"
+import taskmapTasks from "../../assets/img/taskmapTasks.png"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import deployIcon from "../../assets/img/deployIcon.png"
 import gitHubIcon from "../../assets/img/githubLogo.png"
 import { Carousel } from 'primereact/carousel';
-import { Link, useNavigate } from 'react-router'
 
 export const Projetcs = () => {
     const projects = [
@@ -33,6 +37,15 @@ export const Projetcs = () => {
             images: [chicCloset, chicClosetCart],
             repo: "https://github.com/luvsscorpius/chic-closet",
             deploy: "https://luvsscorpius.github.io/chic-closet/#/"
+        },
+        {
+            id: "03",
+            title: "FullStack ToDo List",
+            description: "Este é um projeto de um todo list (lista de tarefas) desenvolvido com React, Node e MongoDB, desenvolvido para funcionar como uma forma de ajudar os usuários finais com as suas tarefas, onde coloquei meus conhecimentos em React, Node e MongoDB em prática e para implementar em meu portifolio.",
+            icons: [javascriptIcon, reactLogo, nodeJsLogo, mongoDbLogo],
+            images: [taskmap, taskmapCadastro, taskmapTasks],
+            repo: "https://github.com/luvsscorpius/taskmap-react",
+            deploy: "https://luvsscorpius.github.io/taskmap-react/"
         },
     ]
 
