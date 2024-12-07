@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import mrmix from "../../assets/img/mrmix.png"
-import mrmixMobile from "../../assets/img/mrmixMobile.png"
 import mrmixModal from "../../assets/img/mrmixModal.png"
-import mrmixModalMobile from "../../assets/img/mrmixModalMobile.png"
 import mrmixCart from "../../assets/img/mrmixCart.png"
-import mrmixCartMobile from "../../assets/img/mrmixCartMobile.png"
 import chicCloset from "../../assets/img/chicCloset.png"
 import chicClosetCart from "../../assets/img/chicClosetCart.png"
 import { IoIosArrowBack } from "react-icons/io";
@@ -24,7 +21,6 @@ export const Projetcs = () => {
             description: "Eu desenvolvi a parte visual desse e-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
             icons: [javascriptIcon],
             images: [mrmix, mrmixModal, mrmixCart],
-            imagesMobile: [mrmixMobile, mrmixModalMobile, mrmixCartMobile],
             repo: "https://github.com/luvsscorpius/Mr-Mix",
             deploy: "https://mr-mix.netlify.app/"
         },
@@ -59,7 +55,7 @@ export const Projetcs = () => {
 
     const projectTemplate = (image) => {
         return (
-            <img src={image} />
+            <img src={image} alt={projects[currentIndex].title} />
         )
     }
 
@@ -80,7 +76,7 @@ export const Projetcs = () => {
                     <div className="iconsContent">
                         {/* utilizando projetcs.icons.map para mapear dentro do objeto dentro do array icons */}
                         {projects[currentIndex].icons.map((icon, index) => (
-                            <img src={icon} key={index} />
+                            <img src={icon} key={index} alt={projects[currentIndex].title} />
                         ))}
                     </div>
 
