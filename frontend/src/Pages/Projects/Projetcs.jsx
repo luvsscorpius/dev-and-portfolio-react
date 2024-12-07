@@ -12,6 +12,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import deployIcon from "../../assets/img/deployIcon.png"
 import gitHubIcon from "../../assets/img/githubLogo.png"
 import { Carousel } from 'primereact/carousel';
+import { Link, useNavigate } from 'react-router'
 
 export const Projetcs = () => {
     const projects = [
@@ -33,7 +34,6 @@ export const Projetcs = () => {
             repo: "https://github.com/luvsscorpius/chic-closet",
             deploy: "https://luvsscorpius.github.io/chic-closet/#/"
         },
-
     ]
 
     // State para controlar os projetos
@@ -85,11 +85,15 @@ export const Projetcs = () => {
                     <div className="linksContainer">
                     {/* href={projects[0].deploy} */}
                         <span>
-                            <img src={deployIcon} alt="" />
+                            <a href={projects[currentIndex].deploy} target="_blank" rel="noopener noreferrer">
+                                <img src={deployIcon} alt="Deploy icone" />
+                            </a>    
                         </span>
 
                         <span>
-                            <img src={gitHubIcon} alt="" />
+                            <a href={projects[currentIndex].repo} target="_blank" rel="noopener noreferrer">
+                                <img src={gitHubIcon} alt="Github icone" />
+                            </a>
                         </span>
                     
                     </div>
