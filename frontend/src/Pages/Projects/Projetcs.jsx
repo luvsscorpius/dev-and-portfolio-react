@@ -12,6 +12,12 @@ import chicClosetCart from "../../assets/img/chicClosetCart.png"
 import taskmap from "../../assets/img/taskmap.png"
 import taskmapCadastro from "../../assets/img/taskmapCadastro.png"
 import taskmapTasks from "../../assets/img/taskmapTasks.png"
+import satisfacaoPacientes from "../../assets/img/satisfacaoPacientes.png"
+import satisfacaoPacientesLogin from "../../assets/img/satisfacaoPacientesLogin.png"
+import satisfacaoPacientesAdm from "../../assets/img/satisfacaoPacientesAdm.png"
+import beautyHair from "../../assets/img/beautyHair.png"
+import beautyHairFinanceiro from "../../assets/img/beautyHairFinanceiro.png"
+import beautyHairCalendario from "../../assets/img/beautyHairCalendario.png"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import deployIcon from "../../assets/img/deployIcon.png"
@@ -46,6 +52,24 @@ export const Projetcs = () => {
             images: [taskmap, taskmapCadastro, taskmapTasks],
             repo: "https://github.com/luvsscorpius/taskmap-react",
             deploy: "https://luvsscorpius.github.io/taskmap-react/"
+        },
+        {
+            id: "04",
+            title: "FullStack Satisfação de Pacientes",
+            description: "O site da Dra. Ana Maria é um projeto voltado para psicólogos que visa otimizar o acompanhamento de feedbacks de seus pacientes. Ele permite que pacientes avaliem suas sessões de forma prática, enquanto a psicóloga tem acesso a um painel administrativo com ferramentas para visualização de dados e análises gráficas.",
+            icons: [javascriptIcon, reactLogo, nodeJsLogo, mongoDbLogo],
+            images: [satisfacaoPacientes, satisfacaoPacientesLogin, satisfacaoPacientesAdm],
+            repo: "https://github.com/luvsscorpius/satisfacao-de-pacientes-react",
+            deploy: "https://luvsscorpius.github.io/satisfacao-de-pacientes-react/#/adm"
+        },
+        {
+            id: "05",
+            title: "Frontend BeautyHair (Site Salão De Beleza)",
+            description: "BeautyHair é um sistema de gerenciamento para salões de beleza, projetado para ajudar os cabeleireiros a gerenciar seus clientes, finanças e agendamentos de forma eficiente.",
+            icons: [javascriptIcon],
+            images: [beautyHair, beautyHairFinanceiro, beautyHairCalendario],
+            repo: "https://github.com/luvsscorpius/BeautyHair",
+            deploy: "https://luvsscorpius.github.io/BeautyHair/#"
         },
     ]
 
