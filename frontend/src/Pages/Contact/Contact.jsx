@@ -1,9 +1,11 @@
 import React from 'react'
 import * as C from './Styles'
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
     return (
-        <main style={{ border: "1px solid green", display: "flex", justifyContent: "center" }}>
+        <main style={{ display: "flex", justifyContent: "center", backgroundColor: "#0A0A0A" }}>
             <C.mainContent>
                 <C.formContainer>
                     <div className="titleContent">
@@ -26,7 +28,27 @@ export const Contact = () => {
                 </C.formContainer>
 
                 <C.viewContainer>
-                    teste
+                    <div className="telDiv">
+                        <div className="telIconDiv">
+                            <FaPhoneAlt size={50} />
+                        </div>
+
+                        <div className="infoDiv">
+                            <p>Telefone</p>
+                            <p>(35) 99892-2086</p>
+                        </div>
+                    </div>
+
+                    <div className="emailDiv">
+                        <div className="emailIconDiv">
+                            <MdEmail size={50} />
+                        </div>
+
+                        <div className="infoDiv">
+                            <p>Email</p>
+                            <p>andersonvittor1801@gmail.com</p>
+                        </div>
+                    </div>
                 </C.viewContainer>
             </C.mainContent>
         </main>
