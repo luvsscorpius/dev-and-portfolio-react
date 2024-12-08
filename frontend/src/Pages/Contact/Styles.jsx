@@ -9,6 +9,12 @@ export const mainContent = styled.div`
     align-items: center;
     background-color: #0A0A0A;
     color: #fff;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
 `
 
 export const formContainer = styled.div`
@@ -151,6 +157,24 @@ export const viewContainer = styled.div`
             svg {
                 fill: #382AB6;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: start;
+        align-items: start;
+        height: auto;
+
+        .telDiv, .emailDiv {
+            flex-direction: row;
+            align-items: center;
+            width: 90%;
+        }
+
+        .infoDiv {
+            width: 80%;
+            text-align: start;
+            word-wrap: break-word;
         }
     }
 `
