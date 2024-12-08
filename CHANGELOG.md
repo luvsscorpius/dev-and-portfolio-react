@@ -1,3 +1,27 @@
+# [1.7.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.6.0...v1.7.0) (2024-12-08)
+
+
+### Features
+
+* **projectspage\:** starting to develop projetcs page ([308d7b8](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/308d7b8d17b49578acfb79a1161ccce53bc5a408))
+* **projectspage:** add a new project to projects ([efe0809](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/efe0809524d53609da4d1cfc1f6840c43243793b))
+* **projectspage:** add flex-wrap to iconsContent ([5db0671](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/5db0671b8610a4171989bd14b11d9eb4737c7f0a))
+* **projectspage:** add overflow-y: scroll ([0075f7b](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/0075f7bae524d6a313f33e35db4534131951570c))
+* **projectspage:** adding a new project (taskMap) to projects ([f7a0a59](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/f7a0a59d73c698364f3a3e9eb17429fb522eaa0d))
+* **projectspage:** adding a new project to projects ([549c4b4](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/549c4b452ff71f2ae57c085667a316585b8ce7b8))
+* **projectspage:** adding alt to the images ([ad42744](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ad427444d52e34e80c8abb4611207400d2ecd49d))
+* **projectspage:** adding animation to mainContent ([89ca4d0](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/89ca4d0696070f35ba871defe1cc82598101c68b))
+* **projectspage:** adding taskmap printscreen to img folder ([d5eef0a](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d5eef0a9b6c05706af608648455fb5e29750ad51))
+* **projectspage:** changing use state ([168565a](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/168565a0ee8b57378c72b4fad5a2fce7952cc71e))
+* **projectspage:** deleting projectTemplateIcons ([6cd2f2e](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/6cd2f2e67561b544a441dade091963f0f0136f9e))
+* **projectspage:** implementing a carousel in imageContainer ([60c61b7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/60c61b78b2405fcdaa3865e5b69c7550541639f4))
+* **projectspage:** implementing an a tag to the span to access the link ([d246b76](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d246b7697609309f96e5fc3e276f8b2ea9d2377d))
+* **projectspage:** implementing more images on project 1 ([e13750f](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e13750f7a09790c2c2afc9bc2f2b2167cf01820c))
+* **projectspage:** implementing responsive design on projectPage ([993a6e2](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/993a6e2c8fe66632124ee0ca3ad58e48df6e6d62))
+* **projectspage:** last commit on this branch ([e7b7958](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e7b7958126e4a10a89faa69ef6b255e25253f04d))
+* **projectspage:** styling projects page ([0f07374](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/0f07374a3fa6bfe461556aaf2bc9b6ded66a8a52))
+* **projectspage:** styling projects page ([a76fb55](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/a76fb5581da12dbb19e2608a71825b091ac6da8e))
+
 # [1.6.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.5.0...v1.6.0) (2024-12-05)
 
 
