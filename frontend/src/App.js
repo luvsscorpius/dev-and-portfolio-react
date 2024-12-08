@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import { Servicos } from './Pages/Servicos/Servicos';
 import { Sobre } from './Pages/Sobre/Sobre';
 import { Projetcs } from './Pages/Projects/Projetcs';
+import { Contact } from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/servicos' element={<Servicos />}/>
           <Route path='/sobre' element={<Sobre />}/>
           <Route path='/projetos' element={<Projetcs />}/>
+          <Route path='/contato' element={<Contact />}/>
         </Routes>
         <GlobalStyle />
       </Router>
