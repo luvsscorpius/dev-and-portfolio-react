@@ -90,6 +90,7 @@ export const Projetcs = () => {
         }
     }
 
+    // projectTemplate to use on carousel
     const projectTemplate = (image) => {
         return (
             <img src={image} alt={projects[currentIndex].title} />
