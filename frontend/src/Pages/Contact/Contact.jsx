@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { act, useState } from 'react'
 import * as C from './Styles'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import axios from 'axios'
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -12,9 +13,18 @@ export const Contact = () => {
         mensagem: ""
     })
 
-    const handleSendInfo = (e) => {
+    const handleSendInfo = async (e) => {
         e.preventDefault()
         console.log(formData)
+
+        try {
+            const response = await axios.post("http://localhost:2000/sendEmail", formData, {
+                headers: { 'Content-Type': 'application/json'}
+            })
+            console.log(response)
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     return (
