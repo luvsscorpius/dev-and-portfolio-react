@@ -11,17 +11,17 @@ router.post('/', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "andersonvittor1801@gmail.com",
-            pass: "zknx vqar qtef qyvj",
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         }
     })
 
-    // Detalhes do email 
-    const mailOptions = {
-        from: `"${formData.nome}" <${formData.email}>`,
-        to: "andersonvittor1801@gmail.com",
-        subject: "Nova Proposta de trabalho",
-        html: `
+   // Detalhes do e-mail
+   const mailOptions = {
+    from: `"${formData.nome}" <${formData.email}>`,// O e-mail do usuário que preencheu o formulário
+    to: process.env.EMAIL_USER, // Seu e-mail, onde você receberá as mensagens
+    subject: 'Nova Proposta de Trabalho', 
+    html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
             <h2 style="color: #2E86C1;">Nova Proposta de Trabalho</h2>
             <p><strong>Nome: </strong> ${formData.nome}</p>
@@ -33,7 +33,8 @@ router.post('/', async (req, res) => {
             </div>
         </div>
     `,
-    }
+    replyTo: formData.email, // Caso você queira responder ao e-mail da pessoa, a resposta vai para o e-mail dela
+};
 
     try {
         await transporter.sendMail(mailOptions, (error, info) => {
