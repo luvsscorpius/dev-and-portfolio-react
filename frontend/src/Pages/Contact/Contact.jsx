@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as C from './Styles'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
+    const [formData, setFormData] = useState({
+        nome: "",
+        sobrenome: "",
+        email: "", 
+        telefone: "",
+        mensagem: ""
+    })
+
+    const handleSendInfo = (e) => {
+        e.preventDefault()
+        console.log(formData)
+    }
+
     return (
         <main style={{ display: "flex", justifyContent: "center", backgroundColor: "#0A0A0A" }}>
             <C.mainContent>
@@ -14,16 +27,16 @@ export const Contact = () => {
 
                     <C.formContent>
                         <div className="firstInputs">
-                            <input type="text" placeholder='Nome' />
-                            <input type="text" placeholder='Sobrenome' />
+                            <input type="text" placeholder='Nome' value={formData.nome} onChange={(e) => {setFormData({...formData, nome: e.target.value})}} required/>
+                            <input type="text" placeholder='Sobrenome' value={formData.sobrenome} onChange={(e) => {setFormData({...formData, sobrenome: e.target.value})}} required />
                         </div>
                         <div className="secondInputs">
-                            <input type="email" placeholder='E-mail' />
-                            <input type="text" placeholder='Telefone' />
+                            <input type="email" placeholder='E-mail' value={formData.email} onChange={(e) => {setFormData({...formData, email: e.target.value})}} required/>
+                            <input type="text" placeholder='Telefone' value={formData.telefone} onChange={(e) => {setFormData({...formData, telefone: e.target.value})}} required />
                         </div>
 
-                        <textarea name="textarea" id="textarea" placeholder='Digite sua mensagem...'></textarea>
-                        <button>Enviar</button>
+                        <textarea name="textarea" id="textarea" placeholder='Digite sua mensagem...' value={formData.mensagem} onChange={(e) => {setFormData({...formData, mensagem: e.target.value})}} required></textarea>
+                        <button onClick={(e) => handleSendInfo(e)}>Enviar</button>
                     </C.formContent>
                 </C.formContainer>
 
