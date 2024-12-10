@@ -3,10 +3,7 @@ const router = express.Router()
 const nodemailer = require('nodemailer')
 
 router.post('/', async (req, res) => {
-    console.log('Rota funcionando')
     const formData = req.body;
-
-    console.log(formData)
 
     const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -24,10 +21,11 @@ router.post('/', async (req, res) => {
     html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
             <h2 style="color: #2E86C1;">Nova Proposta de Trabalho</h2>
-            <p><strong>Nome: </strong> ${formData.nome}</p>
-            <p><strong>Email: </strong> ${formData.email}</p>
+            <p><strong>Nome: </strong> ${formData.nome}  ${formData.sobrenome}</p>
+            <p><strong>Telefone: </strong> ${formData.telefone}</p>
             <p><strong>Mensagem: </strong></p>
             <p>${formData.mensagem}</p>
+            <p><strong>Enviado pelo email: </strong> ${formData.email}</p>
             <div style="margin-top: 30px; font-size: 12px; color: #999;">
                 <p>Este é um e-mail automático, por favor não responda.</p>
             </div>

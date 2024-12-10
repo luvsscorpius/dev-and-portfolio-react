@@ -5,10 +5,6 @@ const cors = require('cors')
 require('dotenv').config();
 app.use(cors())
 
-console.log("Email User:", process.env.EMAIL_USER);  // Verifique o email
-console.log("Email Pass:", process.env.EMAIL_PASS);  // Verifique a senha
-console.log("Email Pass:", process.env.ELASTIC_API_KEY);  // Verifique a senha
-
 // Middleware para processar json nas requisicoes
 app.use(express.json())
 
