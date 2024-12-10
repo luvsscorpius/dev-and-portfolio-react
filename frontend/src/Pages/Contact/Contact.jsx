@@ -3,6 +3,7 @@ import * as C from './Styles'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import axios from 'axios'
+import { toast } from 'react-toastify';
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -21,8 +22,10 @@ export const Contact = () => {
                 headers: { 'Content-Type': 'application/json' }
             })
             setFormData({ nome: "", sobrenome: "", email: "", telefone: "", mensagem: "" });
+            toast.success("E-mail enviado com sucesso")
         } catch (error) {
             console.error(error)
+            toast.error("Falha ao enviar e-mail")
         }
     }
 
