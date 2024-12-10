@@ -8,20 +8,19 @@ export const Contact = () => {
     const [formData, setFormData] = useState({
         nome: "",
         sobrenome: "",
-        email: "", 
+        email: "",
         telefone: "",
         mensagem: ""
     })
 
     const handleSendInfo = async (e) => {
         e.preventDefault()
-        console.log(formData)
 
         try {
             const response = await axios.post("http://localhost:2000/sendEmail", formData, {
-                headers: { 'Content-Type': 'application/json'}
+                headers: { 'Content-Type': 'application/json' }
             })
-            console.log(response)
+            setFormData({ nome: "", sobrenome: "", email: "", telefone: "", mensagem: "" });
         } catch (error) {
             console.error(error)
         }
@@ -37,15 +36,15 @@ export const Contact = () => {
 
                     <C.formContent>
                         <div className="firstInputs">
-                            <input type="text" placeholder='Nome' value={formData.nome} onChange={(e) => {setFormData({...formData, nome: e.target.value})}} required/>
-                            <input type="text" placeholder='Sobrenome' value={formData.sobrenome} onChange={(e) => {setFormData({...formData, sobrenome: e.target.value})}} required />
+                            <input type="text" placeholder='Nome' value={formData.nome} onChange={(e) => { setFormData({ ...formData, nome: e.target.value }) }} required />
+                            <input type="text" placeholder='Sobrenome' value={formData.sobrenome} onChange={(e) => { setFormData({ ...formData, sobrenome: e.target.value }) }} required />
                         </div>
                         <div className="secondInputs">
-                            <input type="email" placeholder='E-mail' value={formData.email} onChange={(e) => {setFormData({...formData, email: e.target.value})}} required/>
-                            <input type="text" placeholder='Telefone' value={formData.telefone} onChange={(e) => {setFormData({...formData, telefone: e.target.value})}} required />
+                            <input type="email" placeholder='E-mail' value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }) }} required />
+                            <input type="text" placeholder='Telefone' value={formData.telefone} onChange={(e) => { setFormData({ ...formData, telefone: e.target.value }) }} required />
                         </div>
 
-                        <textarea name="textarea" id="textarea" placeholder='Digite sua mensagem...' value={formData.mensagem} onChange={(e) => {setFormData({...formData, mensagem: e.target.value})}} required></textarea>
+                        <textarea name="textarea" id="textarea" placeholder='Digite sua mensagem...' value={formData.mensagem} onChange={(e) => { setFormData({ ...formData, mensagem: e.target.value }) }} required></textarea>
                         <button onClick={(e) => handleSendInfo(e)}>Enviar</button>
                     </C.formContent>
                 </C.formContainer>

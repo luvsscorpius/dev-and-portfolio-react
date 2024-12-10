@@ -40,7 +40,7 @@ router.post('/', async (req, res) => {
                 console.error("Erro ao enviar e-mail: ", error)
             } else {
                 console.log("E-mail enviado com sucesso ", info.response)
-                res.status(200)
+                res.status(200).send("Email enviado com sucesso")
             }
         })
     } catch (error) {
