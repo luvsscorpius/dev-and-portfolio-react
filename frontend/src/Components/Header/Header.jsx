@@ -5,9 +5,16 @@ import { IoClose } from "react-icons/io5";
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
+  const [isActive, setIsActive] = useState("")
 
   const toggleMenu = () => {
     setUlClass((prevClass) => (prevClass === 'closed' ? 'open' : 'closed'))
+  }
+
+  const handleActive = (index) => {
+    console.log(index)
+    setIsActive(index)
+    console.log(isActive)
   }
 
   return (
@@ -29,11 +36,11 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <li className={isActive === "Home" ? "active" : ""} onClick={(e) => handleActive("Home")}>Home</li>
+                <li className={isActive === "Servicos" ? "active" : ""} onClick={(e) => handleActive("Servicos")}>Serviços</li>
+                <li className={isActive === "Sobre" ? "active" : ""} onClick={(e) => handleActive("Sobre")}>Sobre</li>
+                <li className={isActive === "Projetos" ? "active" : ""} onClick={(e) => handleActive("Projetos")}>Projetos</li>
+                <li className={isActive === "Contato" ? "active" : ""} onClick={(e) => handleActive("Contato")}>Contato</li>
                 <button>Me Contrate</button>
               </ul>
             </H.ulContainer>

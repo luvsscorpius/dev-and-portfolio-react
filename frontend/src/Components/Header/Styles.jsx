@@ -78,6 +78,12 @@ export const ulContainer = styled.div`
         display: none;
     }
 
+    ul {
+        .active {
+            color: red;
+        }
+    }
+
     @media (max-width: 724px) {
         position: fixed;
         top: 0px;
