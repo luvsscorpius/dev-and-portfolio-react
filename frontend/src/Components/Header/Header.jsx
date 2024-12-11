@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import * as H from './Styles'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { useNavigate } from 'react-router';
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
   const [isActive, setIsActive] = useState("")
+  const navigate = useNavigate()
 
   const toggleMenu = () => {
     setUlClass((prevClass) => (prevClass === 'closed' ? 'open' : 'closed'))
@@ -13,8 +15,11 @@ export const Header = () => {
 
   const handleActive = (index) => {
     console.log(index)
-    setIsActive(index)
-    console.log(isActive)
+    if (index === "Home") {
+      navigate("/")
+    } else {
+      navigate(index)
+    }
   }
 
   return (
