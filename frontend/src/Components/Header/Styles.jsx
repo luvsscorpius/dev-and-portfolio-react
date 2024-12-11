@@ -80,7 +80,7 @@ export const ulContainer = styled.div`
 
     ul {
         .active {
-            color: red;
+            color: #382AB6;
         }
     }
 

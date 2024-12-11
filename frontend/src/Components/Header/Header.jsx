@@ -14,12 +14,8 @@ export const Header = () => {
   }
 
   const handleActive = (index) => {
-    console.log(index)
-    if (index === "Home") {
-      navigate("/")
-    } else {
-      navigate(index)
-    }
+    navigate(index === "Home" ? "/" : `/${index}`)
+    setUlClass("closed")
   }
 
   return (
@@ -41,11 +37,11 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li className={isActive === "Home" ? "active" : ""} onClick={(e) => handleActive("Home")}>Home</li>
-                <li className={isActive === "Servicos" ? "active" : ""} onClick={(e) => handleActive("Servicos")}>Serviços</li>
-                <li className={isActive === "Sobre" ? "active" : ""} onClick={(e) => handleActive("Sobre")}>Sobre</li>
-                <li className={isActive === "Projetos" ? "active" : ""} onClick={(e) => handleActive("Projetos")}>Projetos</li>
-                <li className={isActive === "Contato" ? "active" : ""} onClick={(e) => handleActive("Contato")}>Contato</li>
+                <li onClick={(e) => handleActive("Home")} className={window.location.pathname === "/" ? "active" : "" }>Home</li>
+                <li onClick={(e) => handleActive("servicos")} className={window.location.pathname === "/servicos" ? "active" : "" }>Serviços</li>
+                <li onClick={(e) => handleActive("sobre")} className={window.location.pathname === "/sobre" ? "active" : "" }>Sobre</li>
+                <li onClick={(e) => handleActive("projetos")} className={window.location.pathname === "/projetos" ? "active" : "" }>Projetos</li>
+                <li onClick={(e) => handleActive("contato")} className={window.location.pathname === "/contato" ? "active" : "" }>Contato</li>
                 <button>Me Contrate</button>
               </ul>
             </H.ulContainer>
