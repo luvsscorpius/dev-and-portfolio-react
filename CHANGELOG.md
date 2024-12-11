@@ -1,3 +1,28 @@
+# [1.8.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.7.0...v1.8.0) (2024-12-11)
+
+
+### Bug Fixes
+
+* **contactpage:** installing app.use(express.json()) to use json on requests ([df21e45](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/df21e45ee97dd6a41bc11a910ff49a8b284c6691))
+* **contactpage:** putting .env inside src cause it was giving undefined bug ([deb1c50](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/deb1c5015935037605f69f4812e8290339a503d8))
+
+
+### Features
+
+* **contactpage:** backend - deleting console.log & adding tel to e-mail ([3cc695a](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/3cc695a454990220a4b5030f55a5cb2a63c07e9b))
+* **contactpage:** changing index description and title ([e966101](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e966101c6fc980e3717e87d76cc2d9c1bfa5a548))
+* **contactpage:** creating backend folder and files ([5d4eb5e](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/5d4eb5e9119bdcbb2201be3070e76a590256a08d))
+* **contactpage:** creating folder & files about contact page ([9ed60a2](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/9ed60a25e6e82fd01a8857620984f26236e3cc1d))
+* **contactpage:** creating sendEmail route on backend folder ([f97f4b6](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/f97f4b61b91f1e706703652c76ac2424c1d5bdef))
+* **contactpage:** creating server.js ([c3ebbd5](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/c3ebbd5c57f0fda84f36b3b2049737c646cb588e))
+* **contactpage:** creating state and function to send Info ([ff42bfc](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ff42bfcb19dc7996e1211aae72e5d47cd53b7446))
+* **contactpage:** erasing inputs on frontend after sending an email ([b286282](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/b2862829c1015f50adab24efe5ea3d0879ac979d))
+* **contactpage:** implementing toastify container ([e2a8638](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e2a8638c35b0dd6f146d2b82e04a10ce72771b34))
+* **contactpage:** nodemailer ([6644ae3](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/6644ae368a8d13348fd0162e7275492de57951f7))
+* **contactpage:** responsive design ([c8ad11f](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/c8ad11f8a6a904117bec2390fd8be3edc4ff4c5c))
+* **contactpage:** styling contact page ([db17b4d](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/db17b4dabe468090cc19fb0147462e498cba67c6))
+* **contactpage:** styling formContainer ([efd9af5](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/efd9af54d0d59f0d81e5ab9533bab8ad7e7f2770))
+
 # [1.7.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.6.0...v1.7.0) (2024-12-08)
 
 
