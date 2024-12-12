@@ -26,9 +26,17 @@ export const Home = () => {
                     <button>Baixar Curriculo</button>
 
                     <div>
-                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>                        
+                        <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>  
+                        </a>        
+
+                        <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
                         <img src={githubLogo} alt="Github Logo" />
+                        </a>       
+
+                        <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
                         <img src={whatsappLogo} alt="Whatsapp Logo" />
+                        </a>
                     </div>
                 </H.linksContent>
             </H.mainContent>
