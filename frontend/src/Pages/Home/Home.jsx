@@ -4,6 +4,7 @@ import linkedinLogo from '../../assets/img/linkedinLogo.png'
 import githubLogo from '../../assets/img/githubLogo.png'
 import whatsappLogo from '../../assets/img/whatsappLogo.png'
 import profilePhoto from '../../assets/img/profilePhoto.png'
+import Typical from "react-typical" // Biblioteca para animação do texto
 
 export const Home = () => {
     // Função para baixar o curriculo no botao de baixar curriculo
@@ -22,8 +23,27 @@ export const Home = () => {
                 </H.h2Content>
 
                 <H.introContent>
-                    <h1>Olá me chamo</h1>
-                    <h1 className='name'>Anderson Vitor</h1>
+                    <h1>
+                        <Typical
+                            loop={Infinity}
+                            steps={[
+                                'Olá me chamo', // Primeiro mostra o texto
+                                2000, // aguarda dois segundos
+                                '', // Limpa para criar um efeito natural
+                                500 // Pausa rapida
+                            ]}
+                        />
+                    </h1>
+                    <h1 className='name'>                    
+                        <Typical
+                        loop={Infinity}
+                        steps={[
+                            '', // Aguarda para sincronizar com o primeiro
+                            2500, // Pausa equivalente à duração do primeiro texto
+                            'Anderson Vitor', // Aparece depois 
+                            2000, // Pausa 2 segundos antes de reiniciar
+                        ]}
+                    /></h1>
                 </H.introContent>
 
                 <H.descriptionContent>
@@ -35,15 +55,15 @@ export const Home = () => {
 
                     <div>
                         <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>  
-                        </a>        
+                            <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin' />
+                        </a>
 
                         <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
-                        <img src={githubLogo} alt="Github Logo" />
-                        </a>       
+                            <img src={githubLogo} alt="Github Logo" />
+                        </a>
 
                         <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
-                        <img src={whatsappLogo} alt="Whatsapp Logo" />
+                            <img src={whatsappLogo} alt="Whatsapp Logo" />
                         </a>
                     </div>
                 </H.linksContent>
