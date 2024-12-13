@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.10.1...v1.11.0) (2024-12-13)
+
+
+### Features
+
+* **home.jsx:** implementing typical library to animate h1 ([8881914](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/8881914dfc3cee83430455807993fcb9e0b9e416))
+
 ## [1.10.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.10.0...v1.10.1) (2024-12-13)
 
 
