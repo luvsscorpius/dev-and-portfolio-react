@@ -19,7 +19,7 @@ export const Header = () => {
 
   const redirect = () => {
     // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
-    window.open("https://wa.link/1o5zo0", "_blank")
+    window.open("https://wa.link/ynhxk0", "_blank")
   }
 
   return (

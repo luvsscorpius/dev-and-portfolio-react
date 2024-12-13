@@ -42,7 +42,7 @@ export const Home = () => {
                         <img src={githubLogo} alt="Github Logo" />
                         </a>       
 
-                        <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.link/ynhxk0" target="_blank" rel="noopener noreferrer">
                         <img src={whatsappLogo} alt="Whatsapp Logo" />
                         </a>
                     </div>
