@@ -2,12 +2,24 @@ import React, { useState } from 'react'
 import * as H from './Styles'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { useNavigate } from 'react-router';
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
+  const navigate = useNavigate()
 
   const toggleMenu = () => {
     setUlClass((prevClass) => (prevClass === 'closed' ? 'open' : 'closed'))
+  }
+
+  const handleActive = (index) => {
+    navigate(index === "Home" ? "/" : `/${index}`)
+    setUlClass("closed")
+  }
+
+  const redirect = () => {
+    // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
+    window.open("https://wa.link/1o5zo0", "_blank")
   }
 
   return (
@@ -29,12 +41,12 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Contato</li>
-                <button>Me Contrate</button>
+                <li onClick={(e) => handleActive("Home")} className={window.location.pathname === "/" ? "active" : "" }>Home</li>
+                <li onClick={(e) => handleActive("servicos")} className={window.location.pathname === "/servicos" ? "active" : "" }>Serviços</li>
+                <li onClick={(e) => handleActive("sobre")} className={window.location.pathname === "/sobre" ? "active" : "" }>Sobre</li>
+                <li onClick={(e) => handleActive("projetos")} className={window.location.pathname === "/projetos" ? "active" : "" }>Projetos</li>
+                <li onClick={(e) => handleActive("contato")} className={window.location.pathname === "/contato" ? "active" : "" }>Contato</li>
+                <button onClick={redirect}>Me Contrate</button>
               </ul>
             </H.ulContainer>
         </H.LinksContents>

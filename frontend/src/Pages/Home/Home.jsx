@@ -6,6 +6,14 @@ import whatsappLogo from '../../assets/img/whatsappLogo.png'
 import profilePhoto from '../../assets/img/profilePhoto.png'
 
 export const Home = () => {
+    // Função para baixar o curriculo no botao de baixar curriculo
+    const handleDownload = () => {
+        const link = document.createElement("a")
+        link.href = '/assets/Docs/Curriculo.pdf';  // Caminho relativo ao diretório public
+        link.download = 'Curriculo.pdf'
+        link.click()
+    }
+
     return (
         <H.main>
             <H.mainContent>
@@ -23,12 +31,20 @@ export const Home = () => {
                 </H.descriptionContent>
 
                 <H.linksContent>
-                    <button>Baixar Curriculo</button>
+                    <button onClick={handleDownload}>Baixar Curriculo</button>
 
                     <div>
-                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>                        
+                        <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin'/>  
+                        </a>        
+
+                        <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
                         <img src={githubLogo} alt="Github Logo" />
+                        </a>       
+
+                        <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
                         <img src={whatsappLogo} alt="Whatsapp Logo" />
+                        </a>
                     </div>
                 </H.linksContent>
             </H.mainContent>
