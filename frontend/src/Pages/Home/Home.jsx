@@ -9,7 +9,7 @@ export const Home = () => {
     // Função para baixar o curriculo no botao de baixar curriculo
     const handleDownload = () => {
         const link = document.createElement("a")
-        link.href = '/Docs/Curriculo.pdf'; // Movendo o arquivo para a pasta public para conseguir baixar
+        link.href = '/Docs/Curriculo.pdf'; // Movendo o arquivo para a pasta public para conseguir baixar.
         link.download = 'Curriculo.pdf'
         link.click()
     }
