@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.1...v1.15.2) (2024-12-13)
+
+
+### Bug Fixes
+
+* **index.html:** changing index ([aa46d2c](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/aa46d2cc5ca2ad3b6f89667492ce3ee6936dae78))
+
 ## [1.15.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.0...v1.15.1) (2024-12-13)
 
 
