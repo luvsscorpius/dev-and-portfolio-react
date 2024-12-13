@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.9.0...v1.10.0) (2024-12-13)
+
+
+### Features
+
+* **index.html:** updating favicon ([7b8ce70](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/7b8ce704f8bac81ddd8b1adecac77de692103ae4))
+* **links:** updating whatsapp links on home.jsx & header.jsx ([ee58f96](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ee58f964c319b607c918c152e1aaf2d968f5ba4f))
+
 # [1.9.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.8.0...v1.9.0) (2024-12-13)
 
 
