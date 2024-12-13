@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router';
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
-  const [isActive, setIsActive] = useState("")
   const navigate = useNavigate()
 
   const toggleMenu = () => {
@@ -16,6 +15,11 @@ export const Header = () => {
   const handleActive = (index) => {
     navigate(index === "Home" ? "/" : `/${index}`)
     setUlClass("closed")
+  }
+
+  const redirect = () => {
+    // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
+    window.open("https://wa.link/1o5zo0", "_blank")
   }
 
   return (
@@ -42,7 +46,7 @@ export const Header = () => {
                 <li onClick={(e) => handleActive("sobre")} className={window.location.pathname === "/sobre" ? "active" : "" }>Sobre</li>
                 <li onClick={(e) => handleActive("projetos")} className={window.location.pathname === "/projetos" ? "active" : "" }>Projetos</li>
                 <li onClick={(e) => handleActive("contato")} className={window.location.pathname === "/contato" ? "active" : "" }>Contato</li>
-                <button>Me Contrate</button>
+                <button onClick={redirect}>Me Contrate</button>
               </ul>
             </H.ulContainer>
         </H.LinksContents>

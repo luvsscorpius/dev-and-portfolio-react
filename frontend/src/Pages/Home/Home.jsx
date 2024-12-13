@@ -6,7 +6,6 @@ import whatsappLogo from '../../assets/img/whatsappLogo.png'
 import profilePhoto from '../../assets/img/profilePhoto.png'
 
 export const Home = () => {
-
     // Função para baixar o curriculo no botao de baixar curriculo
     const handleDownload = () => {
         const link = document.createElement("a")
