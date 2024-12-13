@@ -9,7 +9,7 @@ export const Home = () => {
     // Função para baixar o curriculo no botao de baixar curriculo
     const handleDownload = () => {
         const link = document.createElement("a")
-        link.href = '/assets/Docs/Curriculo.pdf';  // Caminho relativo ao diretório public
+        link.href = '/Docs/Curriculo.pdf'; // Movendo o arquivo para a pasta public para conseguir baixar
         link.download = 'Curriculo.pdf'
         link.click()
     }
@@ -42,7 +42,7 @@ export const Home = () => {
                         <img src={githubLogo} alt="Github Logo" />
                         </a>       
 
-                        <a href="https://wa.link/ynhxk0" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
                         <img src={whatsappLogo} alt="Whatsapp Logo" />
                         </a>
                     </div>
