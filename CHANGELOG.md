@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.0...v1.15.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* **react-typical:** fixing react-typical ([b8094a3](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/b8094a3027b348465522afcbf155462f8fb82d34))
+
 # [1.15.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.14.1...v1.15.0) (2024-12-13)
 
 
