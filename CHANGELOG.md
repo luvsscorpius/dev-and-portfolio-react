@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.14.0...v1.14.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* **fix:** changing vercel.json to backend folder ([55802c8](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/55802c817fae6894a3404244a528c2e4dd511ee9))
+
 # [1.14.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.13.1...v1.14.0) (2024-12-13)
 
 
