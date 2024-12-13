@@ -6,6 +6,15 @@ import whatsappLogo from '../../assets/img/whatsappLogo.png'
 import profilePhoto from '../../assets/img/profilePhoto.png'
 
 export const Home = () => {
+
+    // Função para baixar o curriculo no botao de baixar curriculo
+    const handleDownload = () => {
+        const link = document.createElement("a")
+        link.href = '/assets/Docs/Curriculo.pdf';  // Caminho relativo ao diretório public
+        link.download = 'Curriculo.pdf'
+        link.click()
+    }
+
     return (
         <H.main>
             <H.mainContent>
@@ -23,7 +32,7 @@ export const Home = () => {
                 </H.descriptionContent>
 
                 <H.linksContent>
-                    <button>Baixar Curriculo</button>
+                    <button onClick={handleDownload}>Baixar Curriculo</button>
 
                     <div>
                         <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
