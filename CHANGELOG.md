@@ -1,3 +1,11 @@
+## [1.10.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.10.0...v1.10.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* **curriculo.pdf:** moving folder docs and curriculo.pdf to public folder ([bf01708](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/bf01708b3369776a9bfadf4e1a130b942db28963))
+* **curriculo.pdf:** moving folder docs and curriculo.pdf to public folder to fix bug file wasnt on ([49bf2db](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/49bf2db744f41649d186f25e1422b7dac4331d3d))
+
 # [1.10.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.9.0...v1.10.0) (2024-12-13)
 
 
