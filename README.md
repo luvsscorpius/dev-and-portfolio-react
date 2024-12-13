@@ -19,3 +19,9 @@ Aqui estão algumas das tecnologias e ferramentas com as quais trabalho:
 - **Back-end**: Node.js, Express.
 - **Banco de Dados**: MongoDB, MySQL.
 - **Outras Ferramentas**: Git, Vercel, Figma, LucidChart.
+
+## Contato 
+
+- **Email**: andersonvittor1801@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/andersonvitor1801/
+- **GitHub**: https://github.com/luvsscorpius/
