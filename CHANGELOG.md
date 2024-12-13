@@ -1,3 +1,15 @@
+# [1.9.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.8.0...v1.9.0) (2024-12-13)
+
+
+### Features
+
+* **header2.0:** creating a function to redirect user to whatsapp when hire me button clicked ([d5271e7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d5271e73286208c9343763289d56bc05c357a9ab))
+* **header2.0:** function to download resume ([e22f783](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e22f7836451bef99164dcab8feb1d88ce883bdcb))
+* **header2.0:** implementing window.location.pathname to use active ([3cdc138](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/3cdc13842ae084950e9e06cde907a81615a91e21))
+* **header2.0:** putting links on linksContent ([2dad946](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2dad946cdd281349593753518203669b0b1e43de))
+* **header2.0:** using a conditional to check if index === home and navigating to / ([0a9f4bd](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/0a9f4bd5278199905fdede9861239be26ceca666))
+* **header2.9:** starting to implement .active class on header ([9a0c4be](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/9a0c4be8b1f77b232ac6d1d7d0e6d8216e7a13bd))
+
 # [1.8.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.7.0...v1.8.0) (2024-12-11)
 
 
