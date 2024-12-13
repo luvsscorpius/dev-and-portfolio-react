@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.11.0...v1.12.0) (2024-12-13)
+
+
+### Features
+
+* **main:** updating readme.md ([63a5fd7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/63a5fd7d6dcd43a2c032d27a4b808e8bf4553dc5))
+
 # [1.11.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.10.1...v1.11.0) (2024-12-13)
 
 
