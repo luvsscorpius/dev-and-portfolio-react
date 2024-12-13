@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.14.1...v1.15.0) (2024-12-13)
+
+
+### Features
+
+* **contact:** changing endpoints ([ee8c463](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ee8c463f1264129a513a448b2bf5425f9fd2016e))
+
 ## [1.14.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.14.0...v1.14.1) (2024-12-13)
 
 
