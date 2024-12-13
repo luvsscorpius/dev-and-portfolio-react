@@ -1,3 +1,11 @@
+## [1.15.3](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.2...v1.15.3) (2024-12-13)
+
+
+### Bug Fixes
+
+* **index:** changing index ([af13138](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/af13138b4c74c575ff512ed605f3154ac6de285f))
+* **index:** index ([44f0d70](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/44f0d703e6c0c91037ea1bb85acf00bb73439f77))
+
 ## [1.15.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.1...v1.15.2) (2024-12-13)
 
 
