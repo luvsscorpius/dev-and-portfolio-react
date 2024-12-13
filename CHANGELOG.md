@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.13.0...v1.13.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* **index.html:** fixing ([ac118be](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ac118befe9653da83b581c6a89aaa7725e57d208))
+
 # [1.13.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.12.0...v1.13.0) (2024-12-13)
 
 
