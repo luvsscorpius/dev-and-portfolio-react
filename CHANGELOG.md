@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.13.1...v1.14.0) (2024-12-13)
+
+
+### Features
+
+* **vercel:** creating vercel file ([bd01eaf](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/bd01eaf2e41e654b61a68a484e7b95e708348e6a))
+
 ## [1.13.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.13.0...v1.13.1) (2024-12-13)
 
 
