@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/luvsscorpius/dev-and-portfolio-react/static/css/main.f029a054.css",
-    "main.js": "/luvsscorpius/dev-and-portfolio-react/static/js/main.a6c2ecb7.js",
+    "main.js": "/luvsscorpius/dev-and-portfolio-react/static/js/main.7df89a30.js",
     "static/media/profilePhoto.png": "/luvsscorpius/dev-and-portfolio-react/static/media/profilePhoto.840c3d1c7c126639095a.png",
     "static/media/mrmix.png": "/luvsscorpius/dev-and-portfolio-react/static/media/mrmix.3b1406c6002b0aac0151.png",
     "static/media/mrmixCart.png": "/luvsscorpius/dev-and-portfolio-react/static/media/mrmixCart.d64d4b7bc0b83d6395c9.png",
@@ -25,10 +25,10 @@
     "static/media/supportIcon.png": "/luvsscorpius/dev-and-portfolio-react/static/media/supportIcon.c3596e1c7d9337a182f1.png",
     "index.html": "/luvsscorpius/dev-and-portfolio-react/index.html",
     "main.f029a054.css.map": "/luvsscorpius/dev-and-portfolio-react/static/css/main.f029a054.css.map",
-    "main.a6c2ecb7.js.map": "/luvsscorpius/dev-and-portfolio-react/static/js/main.a6c2ecb7.js.map"
+    "main.7df89a30.js.map": "/luvsscorpius/dev-and-portfolio-react/static/js/main.7df89a30.js.map"
   },
   "entrypoints": [
     "static/css/main.f029a054.css",
-    "static/js/main.a6c2ecb7.js"
+    "static/js/main.7df89a30.js"
   ]
 }
