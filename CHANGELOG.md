@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.12.0...v1.13.0) (2024-12-13)
+
+
+### Features
+
+* **root:** gh pages ([594d6dd](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/594d6dd78891586fdf2f875d3d19d46a1e8b181b))
+
 # [1.12.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.11.0...v1.12.0) (2024-12-13)
 
 
