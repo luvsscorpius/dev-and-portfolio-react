@@ -22,8 +22,6 @@ export const Contact = () => {
             const response = await axios.post("https://dev-and-portfolio-react.vercel.app/sendEmail", formData, {
                 headers: { 'Content-Type': 'application/json' }
             })
-            console.log('testeee')
-            console.log(response)
             setFormData({ nome: "", sobrenome: "", email: "", telefone: "", mensagem: "" });
             toast.success("E-mail enviado com sucesso")
         } catch (error) {
