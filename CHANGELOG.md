@@ -1,3 +1,15 @@
+# [1.17.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.2...v1.17.0) (2024-12-14)
+
+
+### Bug Fixes
+
+* **contact.jsx:** changing endpoint ([73a1de5](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/73a1de535294ad9c269a7d76e1637f4893d985ad))
+
+
+### Features
+
+* **backend:** using cors to allow access ([0c0b59e](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/0c0b59e2e45fbd9245df35e30d5a6983131e8b8b))
+
 ## [1.16.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.1...v1.16.2) (2024-12-14)
 
 
