@@ -1,3 +1,10 @@
+## [1.17.6](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.5...v1.17.6) (2024-12-14)
+
+
+### Bug Fixes
+
+* **console.log:** checking env ([b3aece3](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/b3aece39863ea920f47189f960e317280b005c5e))
+
 ## [1.17.5](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.4...v1.17.5) (2024-12-14)
 
 
