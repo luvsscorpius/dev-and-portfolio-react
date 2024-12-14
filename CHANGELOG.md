@@ -1,3 +1,10 @@
+## [1.17.10](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.9...v1.17.10) (2024-12-14)
+
+
+### Bug Fixes
+
+* **file wasnt on site:** fixing file wasnt on site when trying to download resume ([b961c65](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/b961c65f95792c7ba1630d3c0e3556e030a4d665))
+
 ## [1.17.9](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.8...v1.17.9) (2024-12-14)
 
 
