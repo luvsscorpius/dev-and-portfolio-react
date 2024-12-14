@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.0...v1.17.1) (2024-12-14)
+
+
+### Bug Fixes
+
+* **backend:** server.js changing origin in cors ([1fb737e](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/1fb737eaeca26d3ba52903f539c4d71fb425b5d2))
+
 # [1.17.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.2...v1.17.0) (2024-12-14)
 
 
