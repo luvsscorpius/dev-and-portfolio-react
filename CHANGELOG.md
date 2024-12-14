@@ -1,3 +1,10 @@
+## [1.17.9](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.8...v1.17.9) (2024-12-14)
+
+
+### Bug Fixes
+
+* **fix:** adding env variables to vercel to fix cors problem ([d8fbb74](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d8fbb74fc4671d022973f9613a9289b20292e9d7))
+
 ## [1.17.8](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.7...v1.17.8) (2024-12-14)
 
 
