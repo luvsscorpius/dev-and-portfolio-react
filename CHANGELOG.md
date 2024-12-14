@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.0...v1.16.1) (2024-12-14)
+
+
+### Bug Fixes
+
+* **app.js:** reverting ([dafdd35](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/dafdd3592288d641cb72b674e6c7d674bde10a46))
+
 # [1.16.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.4...v1.16.0) (2024-12-14)
 
 
