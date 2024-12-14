@@ -1,6 +1,6 @@
 {
   "name": "dev-and-portfolio-react",
-  "version": "1.17.2",
+  "version": "1.17.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

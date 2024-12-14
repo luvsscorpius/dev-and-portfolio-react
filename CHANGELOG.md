@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.2...v1.17.3) (2024-12-14)
+
+
+### Bug Fixes
+
+* **fix:** trying to fix corsOptions ([ace0fb7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/ace0fb72c53e693b63310f2e4f59ff4a62d46c69))
+
 ## [1.17.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.1...v1.17.2) (2024-12-14)
 
 
