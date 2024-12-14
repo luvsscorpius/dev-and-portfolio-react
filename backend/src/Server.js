@@ -5,7 +5,7 @@ const cors = require('cors')
 require('dotenv').config();
 
 app.use(cors({
-    origin: 'https://luvsscorpius.github.io/', // Domínio permitido
+    origin: 'https://luvsscorpius.github.io', // Domínio permitido
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
     allowedHeaders: ['Content-Type', 'Authorization'] // Cabeçalhos permitidos
   }));
