@@ -8,6 +8,9 @@ app.use(cors())
 // Middleware para processar json nas requisicoes
 app.use(express.json())
 
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+
 const indexRoute = require('./Routes/indexRoute')
 const sendEmailRoute = require('./Routes/sendEmail')
 
