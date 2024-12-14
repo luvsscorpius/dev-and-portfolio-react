@@ -2,7 +2,7 @@ import React from 'react'
 import { Header } from './Components/Header/Header';
 import { GlobalStyle } from './Css/GlobalStyle';
 import { Home } from './Pages/Home/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router'
+import { HashRouter as Router, Routes, Route } from 'react-router'
 import { Servicos } from './Pages/Servicos/Servicos';
 import { Sobre } from './Pages/Sobre/Sobre';
 import { Projetcs } from './Pages/Projects/Projetcs';
