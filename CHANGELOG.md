@@ -1,3 +1,11 @@
+## [1.17.5](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.4...v1.17.5) (2024-12-14)
+
+
+### Bug Fixes
+
+* **fix:** fix ([05cd52b](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/05cd52b02892e11c476d8ad480fd29a27aedea53))
+* **fix:** trying to fix ([53b7d3b](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/53b7d3b44924e3a43bc09575724c9688b7ee81ae))
+
 ## [1.17.4](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.3...v1.17.4) (2024-12-14)
 
 
