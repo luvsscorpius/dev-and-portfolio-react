@@ -1,4 +1,4 @@
-import React, { act, useState } from 'react'
+import React, { useState } from 'react'
 import * as C from './Styles'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -21,6 +21,8 @@ export const Contact = () => {
             const response = await axios.post("https://dev-and-portfolio-react-api.vercel.app/sendEmail", formData, {
                 headers: { 'Content-Type': 'application/json' }
             })
+            console.log('testeee')
+            console.log(response)
             setFormData({ nome: "", sobrenome: "", email: "", telefone: "", mensagem: "" });
             toast.success("E-mail enviado com sucesso")
         } catch (error) {
