@@ -17,11 +17,11 @@ function App() {
         <Header />
         <ToastContainer autoClose={3000} className="toast-container" />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/servicos' element={<Servicos />}/>
-          <Route path='/sobre' element={<Sobre />}/>
-          <Route path='/projetos' element={<Projetcs />}/>
-          <Route path='/contato' element={<Contact />}/>
+          <Route path='https://luvsscorpius.github.io/dev-and-portfolio-react/' element={<Home />}/>
+          <Route path='https://luvsscorpius.github.io/dev-and-portfolio-react/servicos' element={<Servicos />}/>
+          <Route path='https://luvsscorpius.github.io/dev-and-portfolio-react/sobre' element={<Sobre />}/>
+          <Route path='https://luvsscorpius.github.io/dev-and-portfolio-react/projetos' element={<Projetcs />}/>
+          <Route path='https://luvsscorpius.github.io/dev-and-portfolio-react/contato' element={<Contact />}/>
         </Routes>
         <GlobalStyle />
       </Router>
