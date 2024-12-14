@@ -1,3 +1,10 @@
+## [1.16.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.1...v1.16.2) (2024-12-14)
+
+
+### Bug Fixes
+
+* **hashrouter:** changing browserrouter to hashrouter since gh pages doesnt support ([dc21784](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/dc21784de0627f8099047871f07a2b5cf80940f8))
+
 ## [1.16.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.16.0...v1.16.1) (2024-12-14)
 
 
