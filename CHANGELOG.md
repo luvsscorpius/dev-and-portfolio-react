@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.4...v1.16.0) (2024-12-14)
+
+
+### Features
+
+* **app.js:** changing routes ([4f8db97](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/4f8db97bf7ce2ce43f1deba9cfaff0bac0aadf37))
+
 ## [1.15.4](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.15.3...v1.15.4) (2024-12-13)
 
 
