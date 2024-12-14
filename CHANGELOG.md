@@ -1,3 +1,10 @@
+## [1.17.4](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.3...v1.17.4) (2024-12-14)
+
+
+### Bug Fixes
+
+* **backend:** installing cors again ([332f96b](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/332f96b805bb169aceb2f61a81450fc04bf07932))
+
 ## [1.17.3](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.2...v1.17.3) (2024-12-14)
 
 
