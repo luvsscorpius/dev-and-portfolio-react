@@ -18,6 +18,7 @@ export const Contact = () => {
         e.preventDefault()
 
         try {
+            //Changing enpoint
             const response = await axios.post("https://dev-and-portfolio-react.vercel.app/sendEmail", formData, {
                 headers: { 'Content-Type': 'application/json' }
             })
