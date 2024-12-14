@@ -1,3 +1,10 @@
+## [1.17.7](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.6...v1.17.7) (2024-12-14)
+
+
+### Bug Fixes
+
+* **fixing:** changing endpoint ([2019fde](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2019fde864759a1b6ca2f1abf049ce22786c3281))
+
 ## [1.17.6](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.5...v1.17.6) (2024-12-14)
 
 
