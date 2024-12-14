@@ -18,7 +18,7 @@ export const Contact = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.post("https://dev-and-portfolio-react.vercel.app/sendEmail", formData, {
+            const response = await axios.post("https://dev-and-portfolio-react-api.vercel.app/sendEmail", formData, {
                 headers: { 'Content-Type': 'application/json' }
             })
             setFormData({ nome: "", sobrenome: "", email: "", telefone: "", mensagem: "" });
