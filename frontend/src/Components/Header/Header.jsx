@@ -19,7 +19,8 @@ export const Header = () => {
 
   // utilizando o currentPath e utilizando o replace para tirar a # do inicio do window.location.hash para comparações. 
   // Trocando o window.location.pathname para .hash por conta de usar o hashRouter
-  const currentPath = window.location.hash.replace('#', '')
+  // Usando o || '/' para quando for a home também ficar active pois a home so fica em branco
+  const currentPath = window.location.hash.replace('#', '') || '/'
 
   const redirect = () => {
     // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
