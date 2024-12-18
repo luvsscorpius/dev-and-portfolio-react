@@ -1,3 +1,10 @@
+## [1.17.11](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.10...v1.17.11) (2024-12-18)
+
+
+### Bug Fixes
+
+* **active:** changing window.location.pathname to window.location.hash bc hashRouter ([d1603ed](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d1603ed275f8f488501dcc9676e60db36dbdb2e7))
+
 ## [1.17.10](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.9...v1.17.10) (2024-12-14)
 
 
