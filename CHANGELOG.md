@@ -1,3 +1,10 @@
+## [1.17.12](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.11...v1.17.12) (2024-12-18)
+
+
+### Bug Fixes
+
+* **header active:** using || '/' to check if the route is the home route and adding a / ([06d66bf](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/06d66bf6e9e57081f7b3a8154edb32051baaef92))
+
 ## [1.17.11](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.10...v1.17.11) (2024-12-18)
 
 
