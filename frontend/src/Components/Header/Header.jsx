@@ -17,6 +17,10 @@ export const Header = () => {
     setUlClass("closed")
   }
 
+  // utilizando o currentPath e utilizando o replace para tirar a # do inicio do window.location.hash para comparações. 
+  // Trocando o window.location.pathname para .hash por conta de usar o hashRouter
+  const currentPath = window.location.hash.replace('#', '')
+
   const redirect = () => {
     // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
     window.open("https://wa.link/ynhxk0", "_blank")
@@ -41,11 +45,11 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li onClick={(e) => handleActive("Home")} className={window.location.pathname === "/" ? "active" : "" }>Home</li>
-                <li onClick={(e) => handleActive("servicos")} className={window.location.pathname === "/servicos" ? "active" : "" }>Serviços</li>
-                <li onClick={(e) => handleActive("sobre")} className={window.location.pathname === "/sobre" ? "active" : "" }>Sobre</li>
-                <li onClick={(e) => handleActive("projetos")} className={window.location.pathname === "/projetos" ? "active" : "" }>Projetos</li>
-                <li onClick={(e) => handleActive("contato")} className={window.location.pathname === "/contato" ? "active" : "" }>Contato</li>
+                <li onClick={(e) => handleActive("Home")} className={currentPath === "/" ? "active" : "" }>Home</li>
+                <li onClick={(e) => handleActive("servicos")} className={currentPath === "/servicos" ? "active" : "" }>Serviços</li>
+                <li onClick={(e) => handleActive("sobre")} className={currentPath === "/sobre" ? "active" : "" }>Sobre</li>
+                <li onClick={(e) => handleActive("projetos")} className={currentPath === "/projetos" ? "active" : "" }>Projetos</li>
+                <li onClick={(e) => handleActive("contato")} className={currentPath === "/contato" ? "active" : "" }>Contato</li>
                 <button onClick={redirect}>Me Contrate</button>
               </ul>
             </H.ulContainer>
