@@ -15,7 +15,10 @@ export const Home = () => {
         link.click()
     }
 
+    // About
+
     return (
+        <>
         <H.main>
             <H.mainContent>
                 <H.h2Content>
@@ -72,6 +75,12 @@ export const Home = () => {
             <H.mainImage>
                 <img src={profilePhoto} alt="Foto pessoal" />
             </H.mainImage>
+
         </H.main>
+
+        <H.main>
+            <h1>testeeee</h1>
+        </H.main>
+        </>
     )
 }

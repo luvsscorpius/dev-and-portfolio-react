@@ -1,14 +1,25 @@
 import styled from "styled-components";
 
 export const main = styled.main`
+    // Aplicando mobile-first
+    gap: 10px;
+    border: 1px solid red;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: #0A0A0A;
+    height: 100%;
 
-    @media (max-width: 724px) {
-        flex-direction: column;
-        gap: 10px;
+    //Para tablets
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
+    // Para desktops
+    @media (min-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #0A0A0A;
+        border: 1px solid red;
     }
 `
 
@@ -151,4 +162,9 @@ export const mainImage = styled.div`
             margin: 50px;
         }
     }
+`
+export const sobreMimContainer = styled.div`
+    width: 90%;
+    border: 1px solid solid blue;
+    height: 762px;
 `
