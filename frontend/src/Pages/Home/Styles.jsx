@@ -32,10 +32,10 @@ export const mainContent = styled.div`
     gap: 15px;
     background-color: #0A0A0A;
 
-    @media (max-width: 724px) {
-        order: 1;
+    // Tablets
+    @media (min-width: 768px) {
         padding: 10px;
-        gap: 30px;
+        gap: 50px;
     }
 `
 
