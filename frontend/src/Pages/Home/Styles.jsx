@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const main = styled.main`
     // Aplicando mobile-first
-    gap: 10px;
-    border: 1px solid red;
     width: 100%;
     height: 100%;
 
@@ -29,69 +27,84 @@ export const mainContent = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     background-color: #0A0A0A;
 
     // Tablets
     @media (min-width: 768px) {
         padding: 10px;
-        gap: 50px;
+        gap: 40px;
     }
 `
 
 export const h2Content = styled.div`
-    width: 500px;
+    width: 100%;
+    text-align: center;
     font-family: "JetBrains Mono", serif;
-    font-size: 13px;
     font-weight: 100;
     font-style: normal;
     color: #fff;
 
-    @media (max-width: 724px) {
+    @media (min-width: 768px) {
         width: 100%;
+        border: 1px solid red;
         
         h2 {
             text-align: center;
         }
     }
+
+    @media (min-width: 1024px) {
+        width: 500px;
+        font-family: "JetBrains Mono", serif;
+        font-size: 13px;
+        font-weight: 100;
+        font-style: normal;
+        color: #fff;
+    }
 `
 
 export const introContent = styled.div`
-    width: 500px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        color: #eee;
+        font-family: "JetBrains Mono", serif;
+        font-size: 22px;
+        font-weight: bold;
+    }
 
     .name {
+        font-size: 50px;
         color: #382AB6;
     }
 
-    @media (max-width: 724px) {
-        width: 100%;
-
-        h1 {
-            text-align: center;
-        }
-
-        .name {
-            font-size: 50px;
-        }
+    @media (min-width: 1024px) {
+        width: 500px;
+        font-family: "JetBrains Mono", serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
     }
 `
 
 export const descriptionContent = styled.div`
-    width: 500px;
     font-family: "JetBrains Mono", serif;
     color: #eee;
 
-    @media (max-width: 724px) {
-        width: 100%;
-        background-color: #0A0A0A;
+    width: 100%;
+    background-color: #0A0A0A;
 
-        p {
-            text-align: center;
-        }
+    p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 500px;
+        font-family: "JetBrains Mono", serif;
+        color: #eee;
     }
 `
 
