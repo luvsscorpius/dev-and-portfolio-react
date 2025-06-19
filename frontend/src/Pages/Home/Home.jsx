@@ -78,9 +78,6 @@ export const Home = () => {
 
         </H.main>
 
-        <H.main>
-            <h1>testeeee</h1>
-        </H.main>
         </>
     )
 }

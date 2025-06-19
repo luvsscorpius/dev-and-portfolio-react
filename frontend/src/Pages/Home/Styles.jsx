@@ -4,6 +4,9 @@ export const main = styled.main`
     // Aplicando mobile-first
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0A0A;
 
     //Para tablets
     @media (min-width: 768px) {
@@ -17,7 +20,6 @@ export const main = styled.main`
         display: flex;
         flex-direction: row;
         background-color: #0A0A0A;
-        border: 1px solid red;
     }
 `
 
@@ -29,11 +31,16 @@ export const mainContent = styled.div`
     flex-direction: column;
     gap: 30px;
     background-color: #0A0A0A;
+    order: 1;
 
     // Tablets
     @media (min-width: 768px) {
-        padding: 10px;
-        gap: 40px;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    @media (min-width: 1024px) {
+        order: 0;
     }
 `
 
@@ -47,7 +54,7 @@ export const h2Content = styled.div`
 
     @media (min-width: 768px) {
         width: 100%;
-        border: 1px solid red;
+        margin: 30px;
         
         h2 {
             text-align: center;
@@ -61,6 +68,11 @@ export const h2Content = styled.div`
         font-weight: 100;
         font-style: normal;
         color: #fff;
+        margin: 10px;
+
+        h2 {
+            text-align: start;
+        }
     }
 `
 
@@ -82,10 +94,19 @@ export const introContent = styled.div`
 
     @media (min-width: 1024px) {
         width: 500px;
-        font-family: "JetBrains Mono", serif;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
+
+        h1 {
+            text-align: start;
+            font-family: "JetBrains Mono", serif;
+            font-size: 45px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .name {
+            text-align: start;
+            font-size: 45px;
+        }
     }
 `
 
@@ -103,27 +124,34 @@ export const descriptionContent = styled.div`
 
     @media (min-width: 1024px) {
         width: 500px;
-        font-family: "JetBrains Mono", serif;
-        color: #eee;
+        margin: 10px;
+
+        p {
+            text-align: start;
+            padding: 0;
+        }
     }
 `
 
 export const linksContent = styled.div`
-    width: 500px;
-    heigth: 168px;
+
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 
     button {
-        border: 3px solid #382AB6;
-        background-color: transparent;
-        font-family: "JetBrains Mono", serif;
-        color: #fff;
-        width: 40%;
+        width: 50%;
+        height: 60px;
         border-radius: 15px;
         font-size: 15px;
         color: #382AB6;
+        border: 3px solid #382AB6;
+        background-color: transparent;
+        font-family: "JetBrains Mono", serif;
     }
 
     button:hover {
@@ -144,16 +172,18 @@ export const linksContent = styled.div`
         }
     }
 
-    @media (max-width: 724px) {
-        width: 100%;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 1024px) {
+        width: 500px;
+        heigth: 168px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 15px;
+        padding: 0;
 
         button {
-            width: 50%;
-            height: 60px;
+            width: 40%;
+            height: 50px;
         }
     }
 `
