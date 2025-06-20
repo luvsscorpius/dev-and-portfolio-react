@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const main = styled.main`
     // Aplicando mobile-first
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #0A0A0A;
@@ -134,7 +134,6 @@ export const descriptionContent = styled.div`
 `
 
 export const linksContent = styled.div`
-
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -205,9 +204,4 @@ export const mainImage = styled.div`
             margin: 50px;
         }
     }
-`
-export const sobreMimContainer = styled.div`
-    width: 90%;
-    border: 1px solid solid blue;
-    height: 762px;
 `

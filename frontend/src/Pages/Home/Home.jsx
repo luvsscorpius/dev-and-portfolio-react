@@ -18,7 +18,6 @@ export const Home = () => {
     // About
 
     return (
-        <>
         <H.main>
             <H.mainContent>
                 <H.h2Content>
@@ -77,7 +76,5 @@ export const Home = () => {
             </H.mainImage>
 
         </H.main>
-
-        </>
     )
 }

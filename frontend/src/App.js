@@ -13,18 +13,11 @@ import "react-toastify/dist/ReactToastify.css"
 function App() {
   return (
     <>
-      <Router>
         <Header />
         <ToastContainer autoClose={3000} className="toast-container" />
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/servicos' element={<Servicos />}/>
-          <Route path='/sobre' element={<Sobre />}/>
-          <Route path='/projetos' element={<Projetcs />}/>
-          <Route path='/contato' element={<Contact />}/>
-        </Routes>
         <GlobalStyle />
-      </Router>
+        <Home/>
+        <Sobre/>
     </>
   );
 }
