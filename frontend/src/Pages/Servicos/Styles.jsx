@@ -1,68 +1,109 @@
 import styled from "styled-components";
 
-export const main = styled.main`
+export const mainServicos = styled.div`
+    width: 100%:
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #0A0A0A;
 `
 
-export const mainContent = styled.div`
+export const servicosTitleContainer = styled.div`
+    margin-top: 50px;    
+
+    h2 {
+        text-align: center;
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        color: #382AB6;
+    }
+`
+
+export const servicosFlowContainer = styled.div`
     width: 100%;
-    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+`
+
+export const containerText = styled.div`
+    display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #0A0A0A;
-    color: #fff;
-
-    @media (max-width: 724px) {
-        height: auto;
-        padding: 20px;
-    }
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 `
 
-export const servicosTitleContent = styled.div`
-    font-family: "JetBrains Mono", serif;
-
-    @media (max-width: 724px) {
-        margin: 10px;
-    }
-`
-
-export const servicosContentFlow = styled.div`
+export const card = styled.div`   
+    width: 90%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1D1D1D;
+    color: #eee;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    gap: 30px;
 
     span {
+        height: 50px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            bottom: 40px;
+        }
+    }
+
+    h1 {
+        padding: 0 30px 0 30px;
+        margin: 0;
+        text-align: start;
+        font-weight: 1000;
+        width: 100%;
+        color: #382AB6;
+        font-size: 40px;
+    }
+
+    h2 {
+        padding: 0 30px 0 30px;
+        margin: 0;
+        text-align: start;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    p {
+        text-align: start;
+        width: 100%;
+        padding: 0 30px 0 30px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin: 15px;
-        width: 260px;
-        height: 280px;
-        gap: 15px;
-        border-radius: 15px;
-        background-color: #1D1D1D;
-        color: #fff;
-        font-family: "JetBrains Mono", serif;
-        font-size: 18px;
-        transition: transform 0.3s ease-in-out;
-    }
+        justify-content: center;
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-bottom: 50px;
+        width: 100%;
 
-    span:hover {
-        cursor: pointer;
-        transform: scale(1.05)
-    }
-
-    img {
-        width: 130px;
-    }
-
-    .dev {
-        width: 160px;
-    }
-
-    @media (max-width: 724px) {
-        display: flex;
-        flex-direction: column;
+        li {
+            text-align: start;
+            width: 100%;
+            padding: 0 30px 0 30px;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 400;
+        }
     }
 `
+

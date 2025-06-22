@@ -18,6 +18,7 @@ function App() {
         <GlobalStyle />
         <Home/>
         <Sobre/>
+        <Servicos/>
     </>
   );
 }
