@@ -10,7 +10,7 @@ export const mainServicos = styled.div`
 `
 
 export const servicosTitleContainer = styled.div`
-    margin-top: 50px;    
+    margin-top: 100px;    
 
     h2 {
         text-align: center;
@@ -26,6 +26,14 @@ export const servicosFlowContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 90px;
+    margin-top: 10px;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 20px;
+        padding: 30px;
+    }
 `
 
 export const containerText = styled.div`
@@ -48,6 +56,7 @@ export const card = styled.div`
     border-radius: 10px;
     font-family: "Poppins", serif;
     gap: 30px;
+    margin-bottom: 20px;
 
     span {
         height: 50px;
@@ -59,7 +68,7 @@ export const card = styled.div`
             bottom: 40px;
         }
     }
-
+            
     h1 {
         padding: 0 30px 0 30px;
         margin: 0;
@@ -103,6 +112,49 @@ export const card = styled.div`
             margin: 0;
             font-size: 15px;
             font-weight: 400;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        width: 550px;
+        height: 550px;
+        gap: 0px;
+        justify-content: start;
+
+        span {
+            height: 50px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                bottom: 40px;
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+            padding: 0 20px 0 20px;
+        }
+
+        h2 {
+            padding: 0 20px 0 20px;
+            font-size: 22px;
+        }
+
+        p {
+            padding: 0 20px 0 20px;
+        }
+
+        ul {
+
+            li {
+                text-align: start;
+                width: 100%;
+                padding: 0 20px 0 20px;
+                font-size: 15px;
+                font-weight: 400;
+            }
         }
     }
 `
