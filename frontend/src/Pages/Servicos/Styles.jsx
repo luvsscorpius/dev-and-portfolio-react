@@ -68,7 +68,7 @@ export const card = styled.div`
             bottom: 40px;
         }
     }
-            
+
     h1 {
         padding: 0 30px 0 30px;
         margin: 0;
@@ -156,6 +156,13 @@ export const card = styled.div`
                 font-weight: 400;
             }
         }
+    }
+`
+
+export const cardContent = styled.div`
+
+    @media (min-width: 1024px) {
+        overflow-y: auto;
     }
 `
 

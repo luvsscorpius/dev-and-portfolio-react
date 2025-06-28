@@ -1,9 +1,5 @@
 import React from 'react'
 import * as S from './Styles'
-import briefingIcon from '../../assets/img/briefingIcon.png'
-import prototipoIcon from '../../assets/img/prototipoIcon.png'
-import desenvolvimentoIcon from '../../assets/img/desenvolvimentoIcon.png'
-import supportIcon from '../../assets/img/supportIcon.png'
 import iconServicos from '../../assets/img/iconServicos.png'
 
 export const Servicos = () => {
@@ -19,6 +15,7 @@ export const Servicos = () => {
             <img src={iconServicos} alt="" />
           </span>
 
+          <S.cardContent>
           <S.containerText>
             <h2>Criação de Landing Pages (Código ou Design)</h2>
             <p>Páginas que convertem com visual moderno e profissional.</p>
@@ -38,6 +35,7 @@ export const Servicos = () => {
               <li>Ideal para anúncios, lançamentos e captação de leads</li>
             </ul>
           </S.containerText>
+          </S.cardContent>
         </S.card>
 
         <S.card>
@@ -45,6 +43,7 @@ export const Servicos = () => {
             <img src={iconServicos} alt="" />
           </span>
 
+          <S.cardContent>
           <S.containerText>
             <h2>Manutenção de Sites e Landing Pages</h2>
             <p>Atualizações, segurança e suporte contínuo para que você foque no seu negócio!</p>
@@ -64,6 +63,7 @@ export const Servicos = () => {
               <li>Suporte para pequenos novos recursos</li>
             </ul>
           </S.containerText>
+          </S.cardContent>
         </S.card>
 
         <S.card>
@@ -71,6 +71,7 @@ export const Servicos = () => {
             <img src={iconServicos} alt="" />
           </span>
 
+          <S.cardContent>
           <S.containerText>
             <h2>Desenvolvimento de Planilhas em Excel</h2>
             <p>Planilhas inteligentes para controle financeiro, estoque, agendamentos e mais.</p>
@@ -90,6 +91,7 @@ export const Servicos = () => {
               <li>Otimização de tempo</li>
             </ul>
           </S.containerText>
+          </S.cardContent>
         </S.card>
 
         <S.card>
@@ -97,6 +99,7 @@ export const Servicos = () => {
             <img src={iconServicos} alt="" />
           </span>
 
+          <S.cardContent>
           <S.containerText>
             <h2>Formatação de Computadores</h2>
             <p>Deixe seu PC como novo, mais rápido e limpo.</p>
@@ -117,6 +120,7 @@ export const Servicos = () => {
               <li>Otimização de tempo</li>
             </ul>
           </S.containerText>
+          </S.cardContent>
         </S.card>
       </S.servicosFlowContainer>
     </S.mainServicos>
