@@ -4,22 +4,29 @@ import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import nodeJsLogo from "../../assets/img/nodeJsLogo.png"
 import mongoDbLogo from "../../assets/img/mongoDbLogo.png"
-import mrmix from "../../assets/img/mrmix.png"
-import mrmixModal from "../../assets/img/mrmixModal.png"
-import mrmixCart from "../../assets/img/mrmixCart.png"
 import mockupMrMix from "../../assets/img/mockupMrMix.png"
+import mockupChicCloset from "../../assets/img/mockupChicCloset.png"
 
 export const Projects = () => {
     const projects = [
         {
             id: "01",
-            title: "Frontend e-commerce Mr. Mix",
-            description: "Eu desenvolvi a parte visual desse e-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
+            title: "E-commerce Mr. Mix",
+            description: "E-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
             icons: [javascriptIcon],
-            images: [mrmix, mrmixModal, mrmixCart],
+            images: [mockupMrMix],
             repo: "https://github.com/luvsscorpius/Mr-Mix",
             deploy: "https://mr-mix.netlify.app/"
-        }
+        },
+        {
+            id: "02",
+            title: "E-commerce Chic-Closet",
+            description: "Este é um projeto de e-commerce desenvolvido com React, criado para funcionar como uma loja online.",
+            icons: [reactLogo],
+            images: [mockupChicCloset],
+            repo: "https://github.com/luvsscorpius/chic-closet",
+            deploy: "luvsscorpius.github.io/chic-closet/"
+        },
     ]
 
     return (
@@ -29,17 +36,27 @@ export const Projects = () => {
             </P.ProjectsTitleContainer>
 
             <P.projectsFlowContainer>
-                <P.card>
-                    <img src={mockupMrMix} alt="" />
+                {projects.map(projeto => (
+                    <P.card>
+                    <img src={projeto.images[0]} alt="" />
 
                     <P.iconContainer>
-                        <img src={javascriptIcon} alt="" />
+                        {projeto.icons.map(icon => (
+                            <img src={icon} alt="icone de tecnologia" />
+                        ))}
                     </P.iconContainer>
 
                     <P.infoContainer>
-                        testeee
+                        <h1>{projeto.title}</h1>
+                        <p>{projeto.description}</p>
                     </P.infoContainer>
+
+                    <P.buttonsContainer>
+                        <a href={projeto.deploy} target='_blank' rel="noopener noreferrer"><button>Visitar</button></a>
+                        <a href={projeto.repo} target="_blank" rel="noopener noreferrer"></a><button>Repositório</button>
+                    </P.buttonsContainer>
                 </P.card>
+                ))}
             </P.projectsFlowContainer>
         </P.main>
     )

@@ -56,7 +56,7 @@ export const card = styled.div`
     width: 100%;
     height: 600px;
     border-radius: 10px;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 1;
   }
 `
@@ -82,16 +82,64 @@ export const iconContainer = styled.div`
 `
 
 export const infoContainer = styled.div`
-  border: 1px solid red;
   position: absolute;
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  top: 500px;
+  justify-content: flex-end;
+  top: 450px;
   border-radius: 10px;
   z-index: 2;
+  border: 1px solid red;
+  max-height: 90px;
+
+  h1 {
+      text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding: 0px 10px 10px 0px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 455px;
+  }
+`
+
+export const buttonsContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 540px;
+  border-radius: 10px;
+  z-index: 2;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid red;
+
+  button {
+    width: 135px;
+    height: 35px;
+    background-color: #AAAAAA;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #EEEEEE;
+  }
+
+  button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
 `
 
 
