@@ -26,20 +26,24 @@ export const projectsFlowContainer = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 90px;
+    justify-content: start;
+    flex-direction: row;
+    gap: 50px;
     margin-top: 10px;
+    overflow-y: auto;
+    padding: 0 30px 0 30px;
 
     @media (min-width: 1024px) {
         flex-direction: row;
+        justify-content: center;
         gap: 20px;
         padding: 30px;
     }
 `
 
 export const card = styled.div`
-  width: 90%;
+  width: 100%;
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,13 +60,18 @@ export const card = styled.div`
     width: 100%;
     height: 600px;
     border-radius: 10px;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: 1;
+  }
+
+  @media (min-width: 1024px) {
+    width: 340px;
+    min-width: 340px;
+    height: 515px;
   }
 `
 
 export const iconContainer = styled.div`
-  border: 1px solid red;
   position: absolute;
   width: 100%;
   height: 100px;
@@ -84,16 +93,16 @@ export const iconContainer = styled.div`
 export const infoContainer = styled.div`
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  top: 450px;
+  justify-content: center;
+  top: 340px;
   border-radius: 10px;
   z-index: 2;
   border: 1px solid red;
-  max-height: 90px;
+  max-height: 200px;
 
   h1 {
       text-align: center;
@@ -101,11 +110,12 @@ export const infoContainer = styled.div`
 
   p {
     text-align: center;
-    padding: 0px 10px 10px 0px;
+    padding: 0px 10px 0px 10px;
   }
 
   @media (min-width: 1024px) {
-    top: 455px;
+    top: 260px;
+    max-height: 200px;
   }
 `
 
@@ -139,6 +149,10 @@ export const buttonsContainer = styled.div`
   button:hover {
     cursor: pointer;
     opacity: 0.9;
+  }
+
+  @media (min-width: 1024px) {
+    top: 457px;
   }
 `
 

@@ -6,6 +6,7 @@ import nodeJsLogo from "../../assets/img/nodeJsLogo.png"
 import mongoDbLogo from "../../assets/img/mongoDbLogo.png"
 import mockupMrMix from "../../assets/img/mockupMrMix.png"
 import mockupChicCloset from "../../assets/img/mockupChicCloset.png"
+import mockupTaskMap from "../../assets/img/mockupTaskMap.png"
 
 export const Projects = () => {
     const projects = [
@@ -26,6 +27,15 @@ export const Projects = () => {
             images: [mockupChicCloset],
             repo: "https://github.com/luvsscorpius/chic-closet",
             deploy: "luvsscorpius.github.io/chic-closet/"
+        },
+        {
+            id: "02",
+            title: "ToDo List - TaskMap",
+            description: "Aplicação web de lista de tarefas desenvolvida com React, Node.js e MongoDB. Permite aos usuários organizar, criar, editar e excluir tarefas de forma simples e eficiente.",
+            icons: [reactLogo, nodeJsLogo, mongoDbLogo],
+            images: [mockupTaskMap],
+            repo: "https://github.com/luvsscorpius/taskmap-react",
+            deploy: "https://luvsscorpius.github.io/taskmap-react/"
         },
     ]
 
