@@ -9,6 +9,7 @@ export const main = styled.main`
     flex-direction: column;
     gap: 50px;
     background-color: #0A0A0A;
+    align-items: center;
 `
 
 export const ProjectsTitleContainer = styled.div`
@@ -31,13 +32,14 @@ export const projectsFlowContainer = styled.div`
     gap: 50px;
     margin-top: 10px;
     overflow-y: auto;
-    padding: 0 30px 0 30px;
+    padding: 20px 30px 20px 30px;
 
     @media (min-width: 1024px) {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
         padding: 30px;
+        max-width: 80%;
     }
 `
 
@@ -54,6 +56,13 @@ export const card = styled.div`
   height: 600px;
   margin-bottom: 10px;
   position: relative;
+  transition: transform 0.3s ease; 
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    border-radius: 20px;
+  }
 
   img {
     object-fit: cover;
@@ -97,15 +106,15 @@ export const infoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   top: 340px;
   border-radius: 10px;
   z-index: 2;
-  border: 1px solid red;
   max-height: 200px;
 
   h1 {
       text-align: center;
+      padding: 0px 5px 0px 5px;
   }
 
   p {
@@ -132,7 +141,6 @@ export const buttonsContainer = styled.div`
   z-index: 2;
   padding: 10px;
   gap: 10px;
-  border: 1px solid red;
 
   button {
     width: 135px;
