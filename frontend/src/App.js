@@ -6,9 +6,9 @@ import { HashRouter as Router, Routes, Route } from 'react-router'
 import { Servicos } from './Pages/Servicos/Servicos';
 import { Sobre } from './Pages/Sobre/Sobre';
 import { Projects } from './Pages/Projects/Projects';
-import { Contact } from './Pages/Contact/Contact';
 import {ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import { Footer } from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Sobre/>
         <Servicos/>
         <Projects/>
+        <Footer/>
     </>
   );
 }
