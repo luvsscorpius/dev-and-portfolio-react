@@ -6,16 +6,11 @@ export const Footer = styled.footer`
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10px 0px 10px 0px;
 
-    img {
-        border: 1px solid red;
-        position: absolute;
-        heigth: 100%;
-        top: 200px;
-        transform: rotate(-90deg);
-    }
 `
 
 export const card = styled.div`
@@ -23,34 +18,112 @@ export const card = styled.div`
     height: auto;
     border-radius: 20px;
     background-color: #1D1D1D;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+        width: 700px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const LinkContainer = styled.div`
     color: #382AB6;
     border-radius: 20px;
+    height: 100px;
 
     h1 {
-        padding: 20px;
+        padding: 0px 50px 0px 50px;
         font-size: 20px;
         font-family: "Poppins", serif;
         font-weight: bold;
         transition: opacity 04s ease;
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
 
     #curriculo {
-        text-align: end;
-        padding-right: 30px;
+        padding-right: 50px;
+        justify-content: flex-end;
     }
 
     h1:hover {
         cursor: pointer;
         opacity: 0.7;
     }
+
+    @media (min-width: 1024px) {
+
+        #curriculo {
+            justify-content: flex-end;
+        }
+    }
 `
 
 export const infoContainer = styled.div`
-    padding: 20px;
+    padding: 0px 50px 0px 50px;
     font-size: 18px;
     font-family: "Poppins", serif;
     color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+`
+
+export const footerInfo = styled.div`
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+
+    hr {
+        width: 80%;
+        opacity: 0.5;
+    }
+
+    p {
+        padding: 15px;
+        opacity: 0.5;
+    }
+`
+
+export const iconsContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #eee;
+    gap: 10px;
+    transition: transform .8s ease-in-out;
+
+    img {
+        width: 30px;
+        opacity: 0.7;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    #github {
+        width: 37px;
+    }
 `

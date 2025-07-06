@@ -1,6 +1,9 @@
 import React from 'react'
 import * as F from './Styles'
 import bookNegative from '../../assets/img/bookNegative.svg'
+import linkedinLogo from '../../assets/img/linkedinLogo.png'
+import githubLogo from '../../assets/img/githubLogo.png'
+import whatsappLogo from '../../assets/img/whatsappLogo.png'
 
 export const Footer = () => {
   return (
@@ -24,6 +27,29 @@ export const Footer = () => {
                 <h1 id='curriculo'>Baixar meu currículo</h1>
             </F.LinkContainer>
         </F.card>
+
+        <F.footerInfo>
+            <F.iconsContainer>
+                        <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin' />
+                        </a>
+
+                        <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
+                            <img src={githubLogo} alt="Github Logo" id='github' />
+                        </a>
+
+                        <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
+                            <img src={whatsappLogo} alt="Whatsapp Logo" />
+                        </a>
+                        
+            </F.iconsContainer>
+
+            <hr />
+
+            <p>
+            © 2025 Anderson Vitor. Todos os direitos reservados.
+            </p>
+        </F.footerInfo>
     </F.Footer>
   )
 }
