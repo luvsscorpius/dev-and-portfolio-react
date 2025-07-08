@@ -9,8 +9,7 @@ export const Footer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px 10px 0px;
-
+    padding: 10px 0px 0px 0px;
 `
 
 export const card = styled.div`
@@ -18,9 +17,10 @@ export const card = styled.div`
     height: auto;
     border-radius: 20px;
     background-color: #1D1D1D;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 200px;
 
     @media (min-width: 1024px) {
         width: 700px;
@@ -85,7 +85,7 @@ export const infoContainer = styled.div`
 `
 
 export const footerInfo = styled.div`
-    margin-top: 50px;
+    margin-top: 600px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,15 +93,30 @@ export const footerInfo = styled.div`
     align-items: center;
     justify-content: center;
     color: #eee;
-
+    position: relative;
+    overflow: hidden; 
+    
     hr {
         width: 80%;
         opacity: 0.5;
+        z-index: 2;
     }
 
     p {
         padding: 15px;
         opacity: 0.5;
+        z-index: 2;
+    }
+
+    #divider {
+        position: absolute;
+        z-index: 0;
+        width: 100vw;
+        height: 980px;
+        top: -350%;
+        transform: rotate(270deg);
+        object-fit: cover;
+        right: 100px;
     }
 `
 
@@ -113,6 +128,7 @@ export const iconsContainer = styled.div`
     color: #eee;
     gap: 10px;
     transition: transform .8s ease-in-out;
+    z-index: 2;
 
     img {
         width: 30px;

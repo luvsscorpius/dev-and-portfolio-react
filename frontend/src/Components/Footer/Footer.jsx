@@ -46,9 +46,12 @@ export const Footer = () => {
 
             <hr />
 
+            <img src={bookNegative} alt="" id='divider' />
+
             <p>
             © 2025 Anderson Vitor. Todos os direitos reservados.
             </p>
+
         </F.footerInfo>
     </F.Footer>
   )
