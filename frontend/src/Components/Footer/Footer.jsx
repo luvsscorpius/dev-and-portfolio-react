@@ -6,12 +6,20 @@ import githubLogo from '../../assets/img/githubLogo.png'
 import whatsappLogo from '../../assets/img/whatsappLogo.png'
 
 export const Footer = () => {
+    const handleDownload = () => {
+        const link = document.createElement("a")
+        link.href = `${process.env.PUBLIC_URL}/Docs/Curriculo.pdf`; // Usando process.env.PUBLIC_URL para garantir o caminho correto
+        link.download = 'Curriculo.pdf'
+        link.click()
+    }
+
   return (
     <F.Footer>
-        {/* <img src={bookNegative} alt="" /> */}
         <F.card>
             <F.LinkContainer>
+                <a href="https://wa.link/1o5zo0" target='_blank' rel="noreferrer">
                 <h1>Entrar em contato</h1>
+                </a>
             </F.LinkContainer>
 
             <F.infoContainer>
@@ -23,8 +31,10 @@ export const Footer = () => {
                 Se você tem um projeto ou negócio e quer colocá-lo no ar com profissionalismo, entre em contato. Vamos criar algo incrível juntos!</p>
             </F.infoContainer>
 
-            <F.LinkContainer >
-                <h1 id='curriculo'>Baixar meu currículo</h1>
+            <F.LinkContainer className='curriculo' >
+                <button onClick={handleDownload}>
+                 Baixar meu currículo
+                </button>
             </F.LinkContainer>
         </F.card>
 
@@ -46,7 +56,7 @@ export const Footer = () => {
 
             <hr />
 
-            <img src={bookNegative} alt="" id='divider' />
+            <img src={bookNegative} alt="divider img" id='divider' />
 
             <p>
             © 2025 Anderson Vitor. Todos os direitos reservados.

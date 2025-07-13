@@ -9,24 +9,25 @@ export const Footer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px 0px 0px;
 `
 
 export const card = styled.div`
     width: 90%;
-    height: auto;
     border-radius: 20px;
     background-color: #1D1D1D;
     display: flex;
+    height: auto;
     flex-direction: column;
     position: absolute;
-    bottom: 200px;
 
     @media (min-width: 1024px) {
         width: 700px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
+        height: 55vh;
+    }
+
+    .curriculo {
+        display: flex; 
+        justify-content: flex-end;
     }
 `
 
@@ -34,8 +35,15 @@ export const LinkContainer = styled.div`
     color: #382AB6;
     border-radius: 20px;
     height: 100px;
+    display: flex;
+    align-items: center;
 
-    h1 {
+    a {
+        text-decoration: none;
+        color: #382AB6;
+    }
+
+    h1, button {
         padding: 0px 50px 0px 50px;
         font-size: 20px;
         font-family: "Poppins", serif;
@@ -46,12 +54,18 @@ export const LinkContainer = styled.div`
         height: 100%;
     }
 
-    #curriculo {
-        padding-right: 50px;
-        justify-content: flex-end;
+    h1:hover {
+        cursor: pointer;
+        opacity: 0.7;
     }
 
-    h1:hover {
+    button {
+        background-color: transparent;
+        color: #382AB6;
+        border: none;
+    }
+
+    button:hover {
         cursor: pointer;
         opacity: 0.7;
     }
@@ -108,16 +122,39 @@ export const footerInfo = styled.div`
         z-index: 2;
     }
 
-    #divider {
-        position: absolute;
-        z-index: 0;
-        width: 100vw;
-        height: 980px;
-        top: -350%;
-        transform: rotate(270deg);
-        object-fit: cover;
-        right: 100px;
+  img#divider {
+    position: absolute;
+    top: 99%;
+    left: 67%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    width: 150%;
+    max-width: none;
+    height: 100vw;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    img#divider {
+      width: 100%;
+      transform: translate(-50%, -50%) rotate(270deg);
     }
+  }
+
+  @media (min-width: 1024px) {
+    height: 300px;
+    justify-content: end;
+  }
+
+  @media (min-width: 1024px) {
+    img#divider {
+      width: 100%;
+      top: 101%;
+      left: 55%;
+    }
+  }
+  
 `
 
 export const iconsContainer = styled.div`

@@ -15,8 +15,6 @@ export const Home = () => {
         link.click()
     }
 
-    // About
-
     return (
         <H.main>
             <H.mainContent>
