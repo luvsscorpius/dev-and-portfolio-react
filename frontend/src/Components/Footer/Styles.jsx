@@ -9,6 +9,16 @@ export const Footer = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+
+    @media (min-width: 768px) {
+        padding-top: 0px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-top: 0px;
+        height: 700px;
+    }
 `
 
 export const card = styled.div`
@@ -19,10 +29,16 @@ export const card = styled.div`
     height: auto;
     flex-direction: column;
     position: absolute;
+    bottom: 150px;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+        bottom: 200px;
+    }
 
     @media (min-width: 1024px) {
         width: 700px;
-        height: 55vh;
+        height: 400px;
     }
 
     .curriculo {
@@ -41,6 +57,13 @@ export const LinkContainer = styled.div`
     a {
         text-decoration: none;
         color: #382AB6;
+        transition: transform 0.3s ease;
+    }
+
+    a:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transform: scale(1.02);
     }
 
     h1, button {
@@ -63,16 +86,18 @@ export const LinkContainer = styled.div`
         background-color: transparent;
         color: #382AB6;
         border: none;
+        transition: transform 0.3s ease;
     }
 
     button:hover {
         cursor: pointer;
         opacity: 0.7;
+        transform: scale(1.02);
     }
 
     @media (min-width: 1024px) {
 
-        #curriculo {
+        .curriculo {
             justify-content: flex-end;
         }
     }
@@ -109,6 +134,7 @@ export const footerInfo = styled.div`
     color: #eee;
     position: relative;
     overflow: hidden; 
+    z-index: 0;
     
     hr {
         width: 80%;
@@ -143,11 +169,10 @@ export const footerInfo = styled.div`
   }
 
   @media (min-width: 1024px) {
-    height: 300px;
+    height: 100%;
     justify-content: end;
-  }
+    margin-top: 300px;
 
-  @media (min-width: 1024px) {
     img#divider {
       width: 100%;
       top: 101%;
@@ -170,6 +195,10 @@ export const iconsContainer = styled.div`
     img {
         width: 30px;
         opacity: 0.7;
+    }
+
+    a {
+        transition: transform 0.3s ease;
     }
 
     a:hover {
