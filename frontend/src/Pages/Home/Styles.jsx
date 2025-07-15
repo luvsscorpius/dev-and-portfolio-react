@@ -146,11 +146,12 @@ export const linksContent = styled.div`
         width: 50%;
         height: 60px;
         border-radius: 15px;
-        font-size: 15px;
+        font-size: 17px;
         color: #382AB6;
         border: 3px solid #382AB6;
         background-color: transparent;
-        font-family: "JetBrains Mono", serif;
+        font-family: "Poppins", serif;
+        font-weight: 600;
     }
 
     button:hover {
@@ -161,13 +162,27 @@ export const linksContent = styled.div`
     }
 
     div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
         img {
-            margin: 5px;
-            width: 32px;
+            width: 30px;
+            opacity: 0.7;
         }
 
-        img:hover {
+        a {
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
             cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        .github {
+            width: 35px;
         }
     }
 

@@ -59,7 +59,7 @@ export const Home = () => {
                         </a>
 
                         <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
-                            <img src={githubLogo} alt="Github Logo" />
+                            <img src={githubLogo} alt="Github Logo" className='github' />
                         </a>
 
                         <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
