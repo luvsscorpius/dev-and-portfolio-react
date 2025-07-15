@@ -57,6 +57,12 @@ export const card = styled.div`
     font-family: "Poppins", serif;
     gap: 30px;
     margin-bottom: 20px;
+    transition: transform .3s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
 
     span {
         height: 50px;

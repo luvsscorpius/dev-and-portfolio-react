@@ -1,15 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 // Project Template 
-
-const scroll = keyframes`
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-`
 
 export const main = styled.main` 
     width: 100%:
