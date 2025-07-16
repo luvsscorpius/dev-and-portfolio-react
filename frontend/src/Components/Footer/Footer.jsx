@@ -4,6 +4,7 @@ import bookNegative from '../../assets/img/bookNegative.svg'
 import linkedinLogo from '../../assets/img/linkedinLogo.png'
 import githubLogo from '../../assets/img/githubLogo.png'
 import whatsappLogo from '../../assets/img/whatsappLogo.png'
+import instagram from '../../assets/img/instagram.png'
 
 export const Footer = () => {
     const handleDownload = () => {
@@ -50,6 +51,10 @@ export const Footer = () => {
 
                         <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
                             <img src={whatsappLogo} alt="Whatsapp Logo" />
+                        </a>
+
+                        <a href="https://www.instagram.com/vitorr.dev/" target="_blank" rel="noopener noreferrer">
+                            <img src={instagram} alt="Instagram Logo" className='insta' />
                         </a>
                         
             </F.iconsContainer>

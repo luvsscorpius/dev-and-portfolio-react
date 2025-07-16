@@ -184,6 +184,10 @@ export const linksContent = styled.div`
         .github {
             width: 35px;
         }
+
+        .insta {
+            width: 31px;
+        }
     }
 
     @media (min-width: 1024px) {
