@@ -29,7 +29,7 @@ export const card = styled.div`
     height: auto;
     flex-direction: column;
     position: absolute;
-    bottom: 150px;
+    bottom: 130px;
     z-index: 1;
 
     @media (min-width: 768px) {
