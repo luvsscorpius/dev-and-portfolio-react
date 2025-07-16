@@ -4,7 +4,7 @@ import * as S from './Styles'
 export const Sobre = () => {
 
   return (
-        <S.sobreMimContainer>
+        <S.sobreMimContainer id='sobre'>
             <S.titleContainer>
                 <h2>Sobre mim</h2>
             </S.titleContainer>

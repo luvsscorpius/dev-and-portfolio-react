@@ -40,7 +40,7 @@ export const Projects = () => {
     ]
 
     return (
-        <P.main>
+        <P.main id='projetos'>
             <P.ProjectsTitleContainer>
                 <h2>Projetos</h2>
             </P.ProjectsTitleContainer>

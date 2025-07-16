@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as H from './Styles'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
+  const [currentPath, setCurrentPath] = useState(window.location.hash.replace('#', '') || '/')
 
   const toggleMenu = () => {
     setUlClass((prevClass) => (prevClass === 'closed' ? 'open' : 'closed'))
@@ -14,10 +15,35 @@ export const Header = () => {
     setUlClass("closed")
   }
 
-  // utilizando o currentPath e utilizando o replace para tirar a # do inicio do window.location.hash para comparações. 
-  // Trocando o window.location.pathname para .hash por conta de usar o hashRouter
-  // Usando o || '/' para quando for a home também ficar active pois a home so fica em branco
-  const currentPath = window.location.hash.replace('#', '') || '/'
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentPath(window.location.hash.replace('#', '') || '/')
+    }
+
+    window.addEventListener("hashchange", handleHashChange)
+    return () => window.removeEventListener("hashchange", handleHashChange)
+  }, [])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "servicos", "sobre", "projetos", "contato"]
+  
+      for (let i = 0; i < sections.length; i++) {
+        const section = document.getElementById(sections[i])
+        if (section) {
+          const rect = section.getBoundingClientRect()
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setCurrentPath(sections[i])
+            break
+          }
+        }
+      }
+    }
+  
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+  
 
   const redirect = () => {
     // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
@@ -43,11 +69,11 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li onClick={(e) => handleActive("Home")} className={currentPath === "/" ? "active" : "" }>Home</li>
-                <li onClick={(e) => handleActive("servicos")} className={currentPath === "/servicos" ? "active" : "" }>Serviços</li>
-                <li onClick={(e) => handleActive("sobre")} className={currentPath === "/sobre" ? "active" : "" }>Sobre</li>
-                <li onClick={(e) => handleActive("projetos")} className={currentPath === "/projetos" ? "active" : "" }>Projetos</li>
-                <li onClick={(e) => handleActive("contato")} className={currentPath === "/contato" ? "active" : "" }>Contato</li>
+                <li onClick={(e) => handleActive("home")} className={currentPath === "home" ? "active" : "" }><a href="#home">Home</a></li>
+                <li onClick={(e) => handleActive("servicos")} className={currentPath === "servicos" ? "active" : "" }><a href="#servicos">Serviços</a></li>
+                <li onClick={(e) => handleActive("sobre")} className={currentPath === "sobre" ? "active" : "" }><a href="#sobre">Sobre</a></li>
+                <li onClick={(e) => handleActive("projetos")} className={currentPath === "projetos" ? "active" : "" }><a href="#projetos">Projetos</a></li>
+                <li onClick={(e) => handleActive("contato")} className={currentPath === "contato" ? "active" : "" }><a href="#contato">Contato</a></li>
                 <button onClick={redirect}>Me Contrate</button>
               </ul>
             </H.ulContainer>

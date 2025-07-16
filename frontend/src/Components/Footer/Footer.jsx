@@ -14,7 +14,7 @@ export const Footer = () => {
     }
 
   return (
-    <F.Footer>
+    <F.Footer id='contato'>
         <F.card>
             <F.LinkContainer>
                 <a href="https://wa.link/1o5zo0" target='_blank' rel="noreferrer">

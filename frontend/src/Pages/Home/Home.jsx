@@ -16,7 +16,7 @@ export const Home = () => {
     }
 
     return (
-        <H.main>
+        <H.main id='home'>
             <H.mainContent>
                 <H.h2Content>
                     <h2>Software Developer | Frontend Developer</h2>

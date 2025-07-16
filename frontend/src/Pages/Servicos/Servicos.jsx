@@ -4,7 +4,7 @@ import iconServicos from '../../assets/img/iconServicos.png'
 
 export const Servicos = () => {
   return (
-    <S.mainServicos>
+    <S.mainServicos id='servicos'>
       <S.servicosTitleContainer>
         <h2>Serviços</h2>
       </S.servicosTitleContainer>

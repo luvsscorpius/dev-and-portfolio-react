@@ -43,7 +43,12 @@ export const LinksContents = styled.div`
             cursor: pointer;
         }
 
-        li:hover {
+        a {
+            text-decoration: none;
+            color: #eee;
+        }
+
+        a:hover {
             cursor: pointer;
             color: #382AB6;
             transition: 0.3s ease;
@@ -180,6 +185,10 @@ export const ulContainer = styled.div`
             justify-content: start;
             align-items: center;
             height: 100%;
+
+            li.active a {
+                color: #382AB6;
+            }
         }
 
         &.open {
@@ -257,7 +266,7 @@ export const ulContainer = styled.div`
         }
 
         ul {
-            .active {
+            .active  {
                 color: #382AB6;
             }
         }
