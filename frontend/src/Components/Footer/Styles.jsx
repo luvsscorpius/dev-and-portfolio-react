@@ -67,7 +67,7 @@ export const LinkContainer = styled.div`
     }
 
     h1, button {
-        padding: 0px 50px 0px 50px;
+        padding: 0px 30px 0px 30px;
         font-size: 20px;
         font-family: "Poppins", serif;
         font-weight: bold;
@@ -95,7 +95,21 @@ export const LinkContainer = styled.div`
         transform: scale(1.02);
     }
 
+    @media (min-width: 768px) {
+
+        h1, button {
+            padding: 0px 50px 0px 50px;
+        }
+
+        .curriculo {
+            justify-content: flex-end;
+        }
+    }
+
     @media (min-width: 1024px) {
+        h1, button {
+            padding: 0px 50px 0px 50px;
+        }
 
         .curriculo {
             justify-content: flex-end;
@@ -104,7 +118,7 @@ export const LinkContainer = styled.div`
 `
 
 export const infoContainer = styled.div`
-    padding: 0px 50px 0px 50px;
+    padding: 0px 30px 0px 30px;
     font-size: 18px;
     font-family: "Poppins", serif;
     color: #eee;
@@ -121,6 +135,14 @@ export const infoContainer = styled.div`
         font-size: 16px;
         text-align: justify;
     }
+
+    @media (min-width: 768px) {
+        padding: 0px 50px 0px 50px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 0px 50px 0px 50px;
+    }
 `
 
 export const footerInfo = styled.div`
@@ -135,6 +157,7 @@ export const footerInfo = styled.div`
     position: relative;
     overflow: hidden; 
     z-index: 0;
+        border: 1px solid red;
     
     hr {
         width: 80%;

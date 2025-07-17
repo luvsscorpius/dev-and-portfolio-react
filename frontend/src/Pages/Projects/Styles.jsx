@@ -143,13 +143,13 @@ export const buttonsContainer = styled.div`
   gap: 10px;
 
   button {
-    width: 135px;
+    width: 115px;
     height: 35px;
     background-color: #AAAAAA;
     border: 0;
     border-radius: 10px;
     font-family: "Poppins", serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: #EEEEEE;
   }
