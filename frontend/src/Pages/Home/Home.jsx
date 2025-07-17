@@ -11,7 +11,7 @@ export const Home = () => {
     // Função para baixar o curriculo no botao de baixar curriculo
     const handleDownload = () => {
         const link = document.createElement("a")
-        link.href = `${process.env.PUBLIC_URL}/Docs/Curriculo.pdf`; // Usando process.env.PUBLIC_URL para garantir o caminho correto
+        link.href = `${process.env.PUBLIC_URL}/Docs/CurriculoDesenvolvedorFullstack.pdf`; // Usando process.env.PUBLIC_URL para garantir o caminho correto
         link.download = 'Curriculo.pdf'
         link.click()
     }
