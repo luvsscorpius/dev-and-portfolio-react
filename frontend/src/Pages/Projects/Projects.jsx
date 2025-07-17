@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
@@ -48,7 +48,7 @@ export const Projects = () => {
             <P.projectsFlowContainer>
                 {projects.map(projeto => (
                     <P.card>
-                    <img src={projeto.images[0]} alt="" />
+                    <img src={projeto.images[0]} alt="Imagem do projeto" />
 
                     <P.iconContainer>
                         {projeto.icons.map(icon => (

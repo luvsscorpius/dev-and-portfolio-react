@@ -12,7 +12,7 @@ export const Servicos = () => {
       <S.servicosFlowContainer>
         <S.card>
           <span>
-            <img src={iconServicos} alt="" />
+            <img src={iconServicos} alt="icon de serviços" />
           </span>
 
           <S.cardContent>
@@ -40,7 +40,7 @@ export const Servicos = () => {
 
         <S.card>
           <span>
-            <img src={iconServicos} alt="" />
+            <img src={iconServicos} alt="icon de serviços" />
           </span>
 
           <S.cardContent>
@@ -68,7 +68,7 @@ export const Servicos = () => {
 
         <S.card>
           <span>
-            <img src={iconServicos} alt="" />
+            <img src={iconServicos} alt="icon de serviços" />
           </span>
 
           <S.cardContent>
@@ -96,7 +96,7 @@ export const Servicos = () => {
 
         <S.card>
           <span>
-            <img src={iconServicos} alt="" />
+            <img src={iconServicos} alt="icon de serviços" />
           </span>
 
           <S.cardContent>

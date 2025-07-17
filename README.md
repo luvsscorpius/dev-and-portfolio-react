@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre mim, meu
 
 ## Sobre mim
 
-Olá! Meu nome é **Anderson** mas todos me chamam de **and**, sou um desenvolvedor front-end apaixonado por criar interfaces intuitivas e funcionais.
+Olá! Meu nome é **Anderson** mas todos me chamam de **and**, sou um desenvolvedor fullstack apaixonado por criar interfaces intuitivas e funcionais.
 
 - 🌍 Sou do Brasil.
 - 📚 Adoro aprender novas tecnologias e aperfeiçoar minhas habilidades.
@@ -25,3 +25,4 @@ Aqui estão algumas das tecnologias e ferramentas com as quais trabalho:
 - **Email**: andersonvittor1801@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/andersonvitor1801/
 - **GitHub**: https://github.com/luvsscorpius/
+- **Instagram**: https://www.instagram.com/vitorr.dev/
