@@ -7,9 +7,10 @@ export const main = styled.main`
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     background-color: #0A0A0A;
     align-items: center;
+    padding-bottom: 100px;
 `
 
 export const ProjectsTitleContainer = styled.div`

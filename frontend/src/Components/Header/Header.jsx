@@ -24,27 +24,6 @@ export const Header = () => {
     return () => window.removeEventListener("hashchange", handleHashChange)
   }, [])
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "servicos", "sobre", "projetos", "contato"]
-  
-      for (let i = 0; i < sections.length; i++) {
-        const section = document.getElementById(sections[i])
-        if (section) {
-          const rect = section.getBoundingClientRect()
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            setCurrentPath(sections[i])
-            break
-          }
-        }
-      }
-    }
-  
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-  
-
   const redirect = () => {
     // utilizando window.open e nao o window.location.href para poder usar o blank para redirecionar para outra página em uma nova janela
     window.open("https://wa.link/ynhxk0", "_blank")

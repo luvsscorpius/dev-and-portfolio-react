@@ -7,17 +7,19 @@ export const Footer = styled.footer`
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding-top: 100px;
+    gap: 50px;
 
     @media (min-width: 768px) {
         padding-top: 0px;
+        gap: 50px;
     }
 
     @media (min-width: 1024px) {
         padding-top: 0px;
-        height: 700px;
+        gap: 0px;
+        height: 100%;
     }
 `
 
@@ -28,13 +30,8 @@ export const card = styled.div`
     display: flex;
     height: auto;
     flex-direction: column;
-    position: absolute;
-    bottom: 130px;
     z-index: 1;
-
-    @media (min-width: 768px) {
-        bottom: 200px;
-    }
+    margin-top: 0px;
 
     @media (min-width: 1024px) {
         width: 700px;
@@ -146,18 +143,16 @@ export const infoContainer = styled.div`
 `
 
 export const footerInfo = styled.div`
-    margin-top: 600px;
     width: 100%;
-    height: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     color: #eee;
     position: relative;
     overflow: hidden; 
     z-index: 0;
-        border: 1px solid red;
     
     hr {
         width: 80%;
@@ -169,6 +164,7 @@ export const footerInfo = styled.div`
         padding: 15px;
         opacity: 0.5;
         z-index: 2;
+        text-align: center;
     }
 
   img#divider {
@@ -185,6 +181,7 @@ export const footerInfo = styled.div`
   }
 
   @media (min-width: 768px) {
+
     img#divider {
       width: 100%;
       transform: translate(-50%, -50%) rotate(270deg);
@@ -192,9 +189,8 @@ export const footerInfo = styled.div`
   }
 
   @media (min-width: 1024px) {
-    height: 100%;
+    height: 40%;
     justify-content: end;
-    margin-top: 300px;
 
     img#divider {
       width: 100%;
