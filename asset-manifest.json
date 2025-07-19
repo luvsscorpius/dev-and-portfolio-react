@@ -1,34 +1,20 @@
 {
   "files": {
     "main.css": "/dev-and-portfolio-react/static/css/main.f029a054.css",
-    "main.js": "/dev-and-portfolio-react/static/js/main.bf6b2fa1.js",
+    "main.js": "/dev-and-portfolio-react/static/js/main.6e437d77.js",
+    "static/media/mockupMrMix.png": "/dev-and-portfolio-react/static/media/mockupMrMix.a9cceb8641ecb5282a4a.png",
+    "static/media/mockupChicCloset.png": "/dev-and-portfolio-react/static/media/mockupChicCloset.457eaa0f553cf1125273.png",
+    "static/media/mockupTaskMap.png": "/dev-and-portfolio-react/static/media/mockupTaskMap.1a623f8ef7b341420609.png",
     "static/media/profilePhoto.png": "/dev-and-portfolio-react/static/media/profilePhoto.840c3d1c7c126639095a.png",
-    "static/media/mrmix.png": "/dev-and-portfolio-react/static/media/mrmix.3b1406c6002b0aac0151.png",
-    "static/media/mrmixCart.png": "/dev-and-portfolio-react/static/media/mrmixCart.d64d4b7bc0b83d6395c9.png",
-    "static/media/mrmixModal.png": "/dev-and-portfolio-react/static/media/mrmixModal.f0dc4893d91c08ad6b21.png",
-    "static/media/chicCloset.png": "/dev-and-portfolio-react/static/media/chicCloset.bb847ef945e733d1f789.png",
-    "static/media/chicClosetCart.png": "/dev-and-portfolio-react/static/media/chicClosetCart.691a123baed97f21ec6b.png",
-    "static/media/taskmapCadastro.png": "/dev-and-portfolio-react/static/media/taskmapCadastro.64aa001d87ff4b4f89a3.png",
-    "static/media/taskmap.png": "/dev-and-portfolio-react/static/media/taskmap.caf31bcc4e3cf3950d6c.png",
-    "static/media/satisfacaoPacientesAdm.png": "/dev-and-portfolio-react/static/media/satisfacaoPacientesAdm.0803116afd9ead8f0d47.png",
-    "static/media/beautyHair.png": "/dev-and-portfolio-react/static/media/beautyHair.e542873894f046307cc8.png",
-    "static/media/beautyHairFinanceiro.png": "/dev-and-portfolio-react/static/media/beautyHairFinanceiro.a501f5532cd72ef079d7.png",
-    "static/media/beautyHairCalendario.png": "/dev-and-portfolio-react/static/media/beautyHairCalendario.91b264b147cb7f8d24db.png",
-    "static/media/satisfacaoPacientes.png": "/dev-and-portfolio-react/static/media/satisfacaoPacientes.0cf4a3a936f6c521ddac.png",
-    "static/media/satisfacaoPacientesLogin.png": "/dev-and-portfolio-react/static/media/satisfacaoPacientesLogin.b8a2d1146925a8dca415.png",
-    "static/media/taskmapTasks.png": "/dev-and-portfolio-react/static/media/taskmapTasks.be07e4a8daff7d020f10.png",
     "static/media/nodeJsLogo.png": "/dev-and-portfolio-react/static/media/nodeJsLogo.f078b41cc45010c50d54.png",
-    "static/media/briefingIcon.png": "/dev-and-portfolio-react/static/media/briefingIcon.a7abaa3bb1fc8ef3cf97.png",
-    "static/media/prototipoIcon.png": "/dev-and-portfolio-react/static/media/prototipoIcon.0b62e29c163caf1eaef9.png",
     "static/media/mongoDbLogo.png": "/dev-and-portfolio-react/static/media/mongoDbLogo.2d776ec0cdbcbdd079b3.png",
-    "static/media/desenvolvimentoIcon.png": "/dev-and-portfolio-react/static/media/desenvolvimentoIcon.97cd2fe4931dbc8da494.png",
-    "static/media/supportIcon.png": "/dev-and-portfolio-react/static/media/supportIcon.c3596e1c7d9337a182f1.png",
     "index.html": "/dev-and-portfolio-react/index.html",
+    "static/media/bookNegative.svg": "/dev-and-portfolio-react/static/media/bookNegative.59e002995f87af4bf1252f700f076308.svg",
     "main.f029a054.css.map": "/dev-and-portfolio-react/static/css/main.f029a054.css.map",
-    "main.bf6b2fa1.js.map": "/dev-and-portfolio-react/static/js/main.bf6b2fa1.js.map"
+    "main.6e437d77.js.map": "/dev-and-portfolio-react/static/js/main.6e437d77.js.map"
   },
   "entrypoints": [
     "static/css/main.f029a054.css",
-    "static/js/main.bf6b2fa1.js"
+    "static/js/main.6e437d77.js"
   ]
 }
