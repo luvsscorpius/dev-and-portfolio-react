@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 
 export const Header = () => {
   const [ulClass, setUlClass] = useState('closed')
-  const [currentPath, setCurrentPath] = useState(window.location.hash.replace('#', '') || '/')
+  const [currentPath, setCurrentPath] = useState(window.location.hash.replace('#', '') || 'home')
 
   const toggleMenu = () => {
     setUlClass((prevClass) => (prevClass === 'closed' ? 'open' : 'closed'))
@@ -48,7 +48,7 @@ export const Header = () => {
               </div>
 
               <ul>
-                <li onClick={(e) => handleActive("home")} className={currentPath === "home" ? "active" : "" }><a href="#home">Home</a></li>
+                <li onClick={(e) => handleActive("home")} className={currentPath === "home" ? "active" : "" || currentPath === "" ? "active" : ""}><a href="#home">Home</a></li>
                 <li onClick={(e) => handleActive("servicos")} className={currentPath === "servicos" ? "active" : "" }><a href="#servicos">Serviços</a></li>
                 <li onClick={(e) => handleActive("sobre")} className={currentPath === "sobre" ? "active" : "" }><a href="#sobre">Sobre</a></li>
                 <li onClick={(e) => handleActive("projetos")} className={currentPath === "projetos" ? "active" : "" }><a href="#projetos">Projetos</a></li>
