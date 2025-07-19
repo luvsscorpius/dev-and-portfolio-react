@@ -1,14 +1,25 @@
 import styled from "styled-components";
 
 export const main = styled.main`
+    // Aplicando mobile-first
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
+    flex-direction: column;
     background-color: #0A0A0A;
 
-    @media (max-width: 724px) {
-        flex-direction: column;
-        gap: 10px;
+    //Para tablets
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
+    // Para desktops
+    @media (min-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #0A0A0A;
     }
 `
 
@@ -18,88 +29,129 @@ export const mainContent = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     background-color: #0A0A0A;
+    order: 1;
 
-    @media (max-width: 724px) {
-        order: 1;
-        padding: 10px;
-        gap: 30px;
+    // Tablets
+    @media (min-width: 768px) {
+        padding: 0px;
+        gap: 0px;
+    }
+
+    @media (min-width: 1024px) {
+        order: 0;
     }
 `
 
 export const h2Content = styled.div`
-    width: 500px;
+    width: 100%;
+    text-align: center;
     font-family: "JetBrains Mono", serif;
-    font-size: 13px;
     font-weight: 100;
     font-style: normal;
     color: #fff;
 
-    @media (max-width: 724px) {
+    @media (min-width: 768px) {
         width: 100%;
+        margin: 30px;
         
         h2 {
             text-align: center;
         }
     }
+
+    @media (min-width: 1024px) {
+        width: 500px;
+        font-family: "JetBrains Mono", serif;
+        font-size: 13px;
+        font-weight: 100;
+        font-style: normal;
+        color: #fff;
+        margin: 10px;
+
+        h2 {
+            text-align: start;
+        }
+    }
 `
 
 export const introContent = styled.div`
-    width: 500px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        color: #eee;
+        font-family: "JetBrains Mono", serif;
+        font-size: 45px;
+        font-weight: bold;
+    }
 
     .name {
+        font-size: 50px;
         color: #382AB6;
     }
 
-    @media (max-width: 724px) {
-        width: 100%;
+    @media (min-width: 1024px) {
+        width: 500px;
 
         h1 {
-            text-align: center;
+            text-align: start;
+            font-family: "JetBrains Mono", serif;
+            font-size: 45px;
+            font-weight: bold;
+            color: #fff;
         }
 
         .name {
-            font-size: 50px;
+            text-align: start;
+            font-size: 45px;
         }
     }
 `
 
 export const descriptionContent = styled.div`
-    width: 500px;
     font-family: "JetBrains Mono", serif;
     color: #eee;
 
-    @media (max-width: 724px) {
-        width: 100%;
-        background-color: #0A0A0A;
+    width: 100%;
+    background-color: #0A0A0A;
+
+    p {
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 500px;
+        margin: 10px;
 
         p {
-            text-align: center;
+            text-align: start;
+            padding: 0;
         }
     }
 `
 
 export const linksContent = styled.div`
-    width: 500px;
-    heigth: 168px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 
     button {
+        width: 50%;
+        height: 60px;
+        border-radius: 15px;
+        font-size: 17px;
+        color: #382AB6;
         border: 3px solid #382AB6;
         background-color: transparent;
-        font-family: "JetBrains Mono", serif;
-        color: #fff;
-        width: 40%;
-        border-radius: 15px;
-        font-size: 15px;
-        color: #382AB6;
+        font-family: "Poppins", serif;
+        font-weight: 600;
     }
 
     button:hover {
@@ -110,26 +162,46 @@ export const linksContent = styled.div`
     }
 
     div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
         img {
-            margin: 5px;
-            width: 32px;
+            width: 30px;
+            opacity: 0.7;
         }
 
-        img:hover {
+        a {
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
             cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        .github {
+            width: 35px;
+        }
+
+        .insta {
+            width: 31px;
         }
     }
 
-    @media (max-width: 724px) {
-        width: 100%;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 1024px) {
+        width: 500px;
+        heigth: 168px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 15px;
+        padding: 0;
 
         button {
-            width: 50%;
-            height: 60px;
+            width: 40%;
+            height: 50px;
         }
     }
 `

@@ -4,19 +4,20 @@ import linkedinLogo from '../../assets/img/linkedinLogo.png'
 import githubLogo from '../../assets/img/githubLogo.png'
 import whatsappLogo from '../../assets/img/whatsappLogo.png'
 import profilePhoto from '../../assets/img/profilePhoto.png'
+import instagram from '../../assets/img/instagram.png'
 import Typical from "react-typical" // Biblioteca para animação do texto
 
 export const Home = () => {
     // Função para baixar o curriculo no botao de baixar curriculo
     const handleDownload = () => {
         const link = document.createElement("a")
-        link.href = `${process.env.PUBLIC_URL}/Docs/Curriculo.pdf`; // Usando process.env.PUBLIC_URL para garantir o caminho correto
+        link.href = `${process.env.PUBLIC_URL}/Docs/CurriculoDesenvolvedorFullstack.pdf`; // Usando process.env.PUBLIC_URL para garantir o caminho correto
         link.download = 'Curriculo.pdf'
         link.click()
     }
 
     return (
-        <H.main>
+        <H.main id='home'>
             <H.mainContent>
                 <H.h2Content>
                     <h2>Software Developer | Frontend Developer</h2>
@@ -59,11 +60,15 @@ export const Home = () => {
                         </a>
 
                         <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
-                            <img src={githubLogo} alt="Github Logo" />
+                            <img src={githubLogo} alt="Github Logo" className='github' />
                         </a>
 
                         <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
                             <img src={whatsappLogo} alt="Whatsapp Logo" />
+                        </a>
+
+                        <a href="https://www.instagram.com/vitorr.dev/" target="_blank" rel="noopener noreferrer">
+                            <img src={instagram} alt="Instagram Logo" className='insta' />
                         </a>
                     </div>
                 </H.linksContent>
@@ -72,6 +77,7 @@ export const Home = () => {
             <H.mainImage>
                 <img src={profilePhoto} alt="Foto pessoal" />
             </H.mainImage>
+
         </H.main>
     )
 }

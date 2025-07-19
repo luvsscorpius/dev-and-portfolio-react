@@ -1,226 +1,168 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 // Project Template 
 
-const containerAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`
-
 export const main = styled.main` 
-  display: flex;
-  justify-content: center;
-  font-family: "JetBrains Mono", serif;
-  background-color: #0A0A0A;
-
-  @media (max-width: 768px) {
-    align-items: start;
+    width: 100%:
     height: auto;
-  }
-`
-
-export const mainContent = styled.div`
-    width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      justify-content: start;
-      height: auto;
-    }
-`
-
-export const descriptionContainer = styled.div`
-    width: 50%;
-    display: flex;
-    padding: 10px;
     flex-direction: column;
-    justify-content: center;
-    height: auto;
-    gap: 5px;
+    gap: 20px;
+    background-color: #0A0A0A;
+    align-items: center;
+    padding-bottom: 100px;
+`
 
-    .numberContent {
-      display: flex;
-      align-items: center;
-      color: #fff;
-    }
+export const ProjectsTitleContainer = styled.div`
+    margin-top: 50px;    
 
-    .titleContent {
-      padding: 5px;
-      color: #fff;
-    }
-
-    .descriptionContent {
-      text-align: justify;
-      padding: 5px;
-      color: #bbb;
-      overflow-y: scroll;
-    }
-    
-    .iconsContent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        width: 100px;
-      }
-    }
-  
-    h1 {
-      font-size: 100px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-    }
-    
     h2 {
-      font-size: 32px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    hr {
-      width: 99%;
-      margin: 0 auto;
-      border: 1px solid #bbb;
-    }
-
-    .linksContainer {
-      height: 70px;
-      gap: 10px;
-      display: flex;
-      align-items: center;
-      margin: 10px;
-
-      span {
-        height: 100%;
-        width: 70px;
-        background-color: #1d1d1d;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-      }
-
-      span:hover {
-        transition: 0.9s ease;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-
-      img {
-        width: 39px;
-        height: 39px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      width: 100%;
-      display: flex;
-      justify-content: start;
-
-      .iconsContent {
-        display: flex;
-        flex-wrap: wrap;
-      }
+        text-align: center;
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        color: #382AB6;
     }
 `
 
-export const imageContainer = styled.div`
+export const projectsFlowContainer = styled.div`
     width: 100%;
-    padding: 10px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 10px;
+    overflow-y: auto;
+    padding: 20px 30px 20px 30px;
 
-    .p-carousel .p-carousel-prev,
-    .p-carousel .p-carousel-next {
-      background-color: #1d1d1d;
-      height: 50px;
-      width: 50px;
-      font-size: 3rem;
-      color: #fff;
-      border-radius: 5px;
-    }
-
-    .p-carousel .p-carousel-prev:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-
-    .p-carousel .p-carousel-next:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-
-    hr {
-      width: 98.5%;
-      margin: 0 auto;
-      border: 1px solid #bbb;
-    }
-
-    img {
-        width: 100%;
-        border-radius: 15px;
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-
-    @media (max-width: 768px) {
-      justify-content: start;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        max-width: 80%;
     }
 `
 
-export const arrowsContainer = styled.div`
+export const card = styled.div`
+  width: 100%;
+  min-width: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 10px;
-  margin: 5px;
+  justify-content: center;
+  flex-direction: column;
+  color: #eee;
+  border-radius: 10px;
+  font-family: "Poppins", serif;
+  height: 600px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: transform 0.3s ease; 
 
-  .arrowLeftContainer {
-    background-color: #1D1D1D;
-    width: 90px;
-    height: 60px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-  }
-
-  .arrowLeftContainer:hover {
+  &:hover {
     cursor: pointer;
-    transition: 0.9s ease;
-    opacity: 0.8;
+    transform: scale(1.03);
+    border-radius: 20px;
   }
 
-  .arrowRightContainer {
-    background-color: #1D1D1D;
-    width: 90px;
-    height: 60px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
     border-radius: 10px;
+    opacity: 0.5;
+    z-index: 1;
   }
 
-  .arrowRightContainer:hover {
-    cursor: pointer;
-    transition: 0.9s ease;
-    opacity: 0.8;
+  @media (min-width: 1024px) {
+    width: 340px;
+    min-width: 340px;
+    height: 515px;
   }
-
 `
+
+export const iconContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0px;
+  border-radius: 10px;
+
+  img {
+    z-index: 2;
+    opacity: 1;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+  }
+`
+
+export const infoContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  top: 340px;
+  border-radius: 10px;
+  z-index: 2;
+  max-height: 200px;
+
+  h1 {
+      text-align: center;
+      padding: 0px 5px 0px 5px;
+  }
+
+  p {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 260px;
+    max-height: 200px;
+  }
+`
+
+export const buttonsContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 540px;
+  border-radius: 10px;
+  z-index: 2;
+  padding: 10px;
+  gap: 10px;
+
+  button {
+    width: 115px;
+    height: 35px;
+    background-color: #AAAAAA;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #EEEEEE;
+  }
+
+  button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  @media (min-width: 1024px) {
+    top: 457px;
+  }
+`
+
+
