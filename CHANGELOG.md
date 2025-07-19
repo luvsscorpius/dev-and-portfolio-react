@@ -1,3 +1,36 @@
+# [1.18.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.12...v1.18.0) (2025-07-19)
+
+
+### Bug Fixes
+
+* **header.jsx:** fixing currentPath ([0847080](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/08470805e16cb73413fdad88614b64a62d17a645))
+
+
+### Features
+
+* **alt:** improve image accessibility with descriptive alt text ([5ff3690](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/5ff36900f218773fdf9a45023a83d61f863d940e))
+* **docs:** uploading a new resume ([6563b93](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/6563b9319eb08f10dc14a2947cd51b1a00f2a8a3))
+* **footer.jsx:** finishing developing footer ([0c2dd9a](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/0c2dd9a19f973f8ef2ab08c0372cddb0efd92277))
+* **footer.jsx:** finishing footer ([63ce9f0](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/63ce9f0654f65a14cd5dd83f147b07a460bf75f9))
+* **footer.jsx:** starting to develop footer ([c5be716](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/c5be716d7340f624a56f2abd4b52b1ef3d1d5862))
+* **footer.jsx:** still developing footer ([c141186](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/c141186ef97a0a026f4a46f893755b96ca664019))
+* **footer/home:** implementing instagram logo ([65c7998](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/65c7998d11cba6bbd5dc2fa86845da8e659d083b))
+* **footer:** continuing developing footer ([730997c](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/730997c8bb925d82a09a9ea261379b6ddaf8ba2c))
+* **git add .:** git cz ([e0e5399](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/e0e5399020aee1ef084229a92b55cbaa262523a6))
+* **header.jsx:** implementing active ([91bae6f](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/91bae6f9dba5b6d9925351ca99eb3fac921e48e7))
+* **home.jsx:** implementing hover on links ([7da60d7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/7da60d7c7ee3d1fd49fcc0755c0833eea0d11eff))
+* **mobile first:** starting to apply mobile first to styles ([92b5793](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/92b57935a66e8266ece00457889e83423c405b87))
+* **projects.jsx:** continuing developing cards to show projects ([a5f63f1](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/a5f63f15d53e9c10ae771545eb87fa23dc4ee3a0))
+* **projects.jsx:** developing cards to show projects ([1b23335](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/1b233356cfe2bb5feaef485b58dc52c7689e29b6))
+* **projects.jsx:** hover on card ([3170a14](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/3170a142edae3a688d85533cf8095433c5d64718))
+* **projects.jsx:** starting to develop cards to show the projects ([2e740e8](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2e740e88ab6c573073acd2a4db1711a122ec9cec))
+* **servicos.jsx:** continuing developing cards ([deead42](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/deead424e04a1e74f7686de04e62dcc00a514d30))
+* **servicos.jsx:** finishing developing cards ([20ed7e1](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/20ed7e11d60c5a1db39f13f939a98b7e409d9435))
+* **servicos.jsx:** implementing hover on cards ([5a97a26](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/5a97a261aaded67abc38bff82ac30fc9293614ab))
+* **servicos.jsx:** starting to develop servicosFlowContainer ([2f441e0](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/2f441e0865bdca9c2df35ce7113d4121c12cf8e8))
+* **sobre.jsx:** creating a time line ([58d4a3e](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/58d4a3e5b975df4907c675a163e0f4a6634d421b))
+* **sobre.jsx:** started to redesign sobre.jsx ([f0cc669](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/f0cc6693919612d95723a16c36dea886d63b31d1))
+
 ## [1.17.12](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.11...v1.17.12) (2024-12-18)
 
 
