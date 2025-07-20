@@ -75,7 +75,7 @@ export const Home = () => {
             </H.mainContent>
 
             <H.mainImage>
-                <img src={profilePhoto} alt="Foto pessoal" />
+                <img src={profilePhoto} alt="Foto pessoal" loading='lazy' />
             </H.mainImage>
 
         </H.main>
