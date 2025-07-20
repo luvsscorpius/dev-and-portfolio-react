@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.1...v1.18.2) (2025-07-20)
+
+
+### Bug Fixes
+
+* **alt:** implementing loading lazy on images ([d82e5b8](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/d82e5b89d908f8ce0a08d8e09b342be50a1c5d83))
+
 ## [1.18.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.0...v1.18.1) (2025-07-20)
 
 
