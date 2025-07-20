@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-and-portfolio-react/static/css/main.f029a054.css",
-    "main.js": "/dev-and-portfolio-react/static/js/main.6e437d77.js",
+    "main.js": "/dev-and-portfolio-react/static/js/main.3f66c5ae.js",
     "static/media/mockupMrMix.png": "/dev-and-portfolio-react/static/media/mockupMrMix.a9cceb8641ecb5282a4a.png",
     "static/media/mockupChicCloset.png": "/dev-and-portfolio-react/static/media/mockupChicCloset.457eaa0f553cf1125273.png",
     "static/media/mockupTaskMap.png": "/dev-and-portfolio-react/static/media/mockupTaskMap.1a623f8ef7b341420609.png",
@@ -11,10 +11,10 @@
     "index.html": "/dev-and-portfolio-react/index.html",
     "static/media/bookNegative.svg": "/dev-and-portfolio-react/static/media/bookNegative.59e002995f87af4bf1252f700f076308.svg",
     "main.f029a054.css.map": "/dev-and-portfolio-react/static/css/main.f029a054.css.map",
-    "main.6e437d77.js.map": "/dev-and-portfolio-react/static/js/main.6e437d77.js.map"
+    "main.3f66c5ae.js.map": "/dev-and-portfolio-react/static/js/main.3f66c5ae.js.map"
   },
   "entrypoints": [
     "static/css/main.f029a054.css",
-    "static/js/main.6e437d77.js"
+    "static/js/main.3f66c5ae.js"
   ]
 }
