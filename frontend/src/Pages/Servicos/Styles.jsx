@@ -13,7 +13,7 @@ export const servicosTitleContainer = styled.div`
     margin-top: 100px;    
 
     h2 {
-        text-align: justify;
+        text-align: center;
         font-family: "Poppins", serif;
         font-size: 30px;
         color: #382AB6;
