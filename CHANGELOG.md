@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.0...v1.18.1) (2025-07-20)
+
+
+### Bug Fixes
+
+* **home.jsx:** fixing p font size ([31ea0e7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/31ea0e7bd8b02ba115064f949add299b6d0ca263))
+
 # [1.18.0](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.17.12...v1.18.0) (2025-07-19)
 
 
