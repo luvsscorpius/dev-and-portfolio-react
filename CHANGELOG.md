@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.2...v1.18.3) (2025-07-20)
+
+
+### Bug Fixes
+
+* **servicos styles.jsx:** fixing h2 text-align to center ([aa8a260](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/aa8a2601db899ed1822b6681782f30807d78b01b))
+
 ## [1.18.2](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.1...v1.18.2) (2025-07-20)
 
 
