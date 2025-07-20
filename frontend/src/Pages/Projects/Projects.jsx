@@ -48,11 +48,11 @@ export const Projects = () => {
             <P.projectsFlowContainer>
                 {projects.map(projeto => (
                     <P.card>
-                    <img src={projeto.images[0]} alt="Imagem do projeto" />
+                    <img src={projeto.images[0]} alt="Imagem do projeto" loading='lazy' />
 
                     <P.iconContainer>
                         {projeto.icons.map(icon => (
-                            <img src={icon} alt="icone de tecnologia" />
+                            <img src={icon} alt="icone de tecnologia" loading='lazy' />
                         ))}
                     </P.iconContainer>
 

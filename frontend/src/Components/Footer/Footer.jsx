@@ -18,7 +18,7 @@ export const Footer = () => {
     <F.Footer id='contato'>
         <F.card>
             <F.LinkContainer>
-                <a href="https://wa.link/1o5zo0" target='_blank' rel="noreferrer">
+                <a href="https://wa.link/1o5zo0" target='_blank' rel="noreferrer" loading='lazy'>
                 <h1>Entrar em contato</h1>
                 </a>
             </F.LinkContainer>
@@ -42,26 +42,26 @@ export const Footer = () => {
         <F.footerInfo>
             <F.iconsContainer>
                         <a href="https://www.linkedin.com/in/andersonvitor1801/" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin' />
+                            <img src={linkedinLogo} alt="Linkedin Logo" title='Linkedin' loading='lazy' />
                         </a>
 
                         <a href="https://github.com/luvsscorpius" target="_blank" rel="noopener noreferrer">
-                            <img src={githubLogo} alt="Github Logo" id='github' />
+                            <img src={githubLogo} alt="Github Logo" id='github' loading='lazy'/>
                         </a>
 
                         <a href="https://wa.link/1o5zo0" target="_blank" rel="noopener noreferrer">
-                            <img src={whatsappLogo} alt="Whatsapp Logo" />
+                            <img src={whatsappLogo} alt="Whatsapp Logo" loading='lazy'/>
                         </a>
 
                         <a href="https://www.instagram.com/vitorr.dev/" target="_blank" rel="noopener noreferrer">
-                            <img src={instagram} alt="Instagram Logo" className='insta' />
+                            <img src={instagram} alt="Instagram Logo" className='insta' loading='lazy'/>
                         </a>
                         
             </F.iconsContainer>
 
             <hr />
 
-            <img src={bookNegative} alt="divider img" id='divider' />
+            <img src={bookNegative} alt="divider img" id='divider' loading='lazy' />
 
             <p>
             © 2025 Anderson Vitor. Todos os direitos reservados.
