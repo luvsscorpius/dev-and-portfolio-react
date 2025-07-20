@@ -26,7 +26,7 @@ export const Projects = () => {
             icons: [reactLogo],
             images: [mockupChicCloset],
             repo: "https://github.com/luvsscorpius/chic-closet",
-            deploy: "luvsscorpius.github.io/chic-closet/"
+            deploy: "https://luvsscorpius.github.io/chic-closet/"
         },
         {
             id: "02",
@@ -63,7 +63,7 @@ export const Projects = () => {
 
                     <P.buttonsContainer>
                         <a href={projeto.deploy} target='_blank' rel="noopener noreferrer"><button>Visitar</button></a>
-                        <a href={projeto.repo} target="_blank" rel="noopener noreferrer"></a><button>Repositório</button>
+                        <a href={projeto.repo} target='_blank' rel="noopener noreferrer"><button>Repositório</button></a>
                     </P.buttonsContainer>
                 </P.card>
                 ))}

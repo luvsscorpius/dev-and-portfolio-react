@@ -20,7 +20,7 @@ export const Home = () => {
         <H.main id='home'>
             <H.mainContent>
                 <H.h2Content>
-                    <h2>Software Developer | Frontend Developer</h2>
+                    <h2>Software Developer | Fullstack Developer</h2>
                 </H.h2Content>
 
                 <H.introContent>

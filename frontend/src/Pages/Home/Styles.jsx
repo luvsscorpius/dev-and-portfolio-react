@@ -83,12 +83,12 @@ export const introContent = styled.div`
         text-align: center;
         color: #eee;
         font-family: "JetBrains Mono", serif;
-        font-size: 45px;
+        font-size: 40px;
         font-weight: bold;
     }
 
     .name {
-        font-size: 50px;
+        font-size: 40px;
         color: #382AB6;
     }
 

@@ -30,7 +30,7 @@ export const descriptionContainer = styled.div`
     p {
         font-family: "Poppins", serif;
         color: #eee;
-        text-align: center;
+        text-align: justify;
         padding: 30px;
         font-weight: 600;
     }
