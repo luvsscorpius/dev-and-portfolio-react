@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.3...v1.18.4) (2025-07-20)
+
+
+### Bug Fixes
+
+* **fix:** fix ([aad2049](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/aad20493b37fa8257d92bf6b6ec0bea17b7665f7))
+
 ## [1.18.3](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.2...v1.18.3) (2025-07-20)
 
 
