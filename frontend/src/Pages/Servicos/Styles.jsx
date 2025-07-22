@@ -94,7 +94,7 @@ export const card = styled.div`
     }
 
     p {
-        text-align: start;
+        text-align: justify;
         width: 100%;
         padding: 0 30px 0 30px;
         margin: 0;
@@ -112,7 +112,7 @@ export const card = styled.div`
         width: 100%;
 
         li {
-            text-align: start;
+            text-align: justify;
             width: 100%;
             padding: 0 30px 0 30px;
             margin: 0;
