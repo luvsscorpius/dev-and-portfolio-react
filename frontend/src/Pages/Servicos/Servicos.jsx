@@ -113,11 +113,11 @@ export const Servicos = () => {
 
           <S.containerText>
             <ul>
-              <li>Fórmulas personalizadas</li>
-              <li>Tabelas dinâmicas e gráficos</li>
-              <li>Automação com VBA (opcional)</li>
-              <li>Design limpo e funcional</li>
-              <li>Otimização de tempo</li>
+            <li>Remoção de arquivos desnecessários e vírus</li>
+      <li>Reinstalação limpa do sistema operacional</li>
+      <li>Melhoria no tempo de inicialização e resposta</li>
+      <li>Configuração básica de programas essenciais</li>
+      <li>Backup e restauração de arquivos (opcional)</li>
             </ul>
           </S.containerText>
           </S.cardContent>
