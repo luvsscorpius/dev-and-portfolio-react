@@ -51,6 +51,7 @@ export const h2Content = styled.div`
     font-weight: 100;
     font-style: normal;
     color: #fff;
+    padding: 0 5px 0 5px;
 
     @media (min-width: 768px) {
         width: 100%;
