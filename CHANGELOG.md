@@ -1,3 +1,10 @@
+## [1.18.5](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.4...v1.18.5) (2025-07-22)
+
+
+### Bug Fixes
+
+* **servicos.jsx:** updating servicos.jsx ([814202b](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/814202b7699b04e3da53a00c89aefd8783fcef4f))
+
 ## [1.18.4](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.3...v1.18.4) (2025-07-20)
 
 
