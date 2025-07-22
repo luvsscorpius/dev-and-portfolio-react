@@ -1,3 +1,10 @@
+## [1.18.6](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.5...v1.18.6) (2025-07-22)
+
+
+### Bug Fixes
+
+* **servicos styles.jsx:** fixing card ([95e77f7](https://github.com/luvsscorpius/dev-and-portfolio-react/commit/95e77f7b368f560585274ea13a5edda886c379d3))
+
 ## [1.18.5](https://github.com/luvsscorpius/dev-and-portfolio-react/compare/v1.18.4...v1.18.5) (2025-07-22)
 
 
