@@ -3,15 +3,26 @@ import * as P from "./Styles"
 import javascriptIcon from "../../assets/img/javascriptIcon.png"
 import reactLogo from "../../assets/img/reactLogo.png"
 import nodeJsLogo from "../../assets/img/nodeJsLogo.png"
+import mysqlLogo from "../../assets/img/mysqlLogo.png"
 import mongoDbLogo from "../../assets/img/mongoDbLogo.png"
 import mockupMrMix from "../../assets/img/mockupMrMix.png"
 import mockupChicCloset from "../../assets/img/mockupChicCloset.png"
 import mockupTaskMap from "../../assets/img/mockupTaskMap.png"
+import mockupSalusLaboris from "../../assets/img/MockupSalusLaboris.png"
 
 export const Projects = () => {
     const projects = [
         {
             id: "01",
+            title: "Salus Laboris",
+            description: "Associação privada dedicada à promoção da saúde ocupacional e à segurança do trabalho, com sede em Santa Rita do Sapucaí, MG",
+            icons: [reactLogo, nodeJsLogo, mysqlLogo],
+            images: [mockupSalusLaboris],
+            repo: "https://github.com/luvsscorpius",
+            deploy: "https://saluslaboris.org.br/#/"
+        },
+        {
+            id: "02",
             title: "E-commerce Mr. Mix",
             description: "E-commerce de sorvetes Mr. Mix usando majoritariamente JavaScript.",
             icons: [javascriptIcon],
@@ -20,7 +31,7 @@ export const Projects = () => {
             deploy: "https://mr-mix.netlify.app/"
         },
         {
-            id: "02",
+            id: "03",
             title: "E-commerce Chic-Closet",
             description: "Este é um projeto de e-commerce desenvolvido com React, criado para funcionar como uma loja online.",
             icons: [reactLogo],
@@ -29,7 +40,7 @@ export const Projects = () => {
             deploy: "https://luvsscorpius.github.io/chic-closet/"
         },
         {
-            id: "02",
+            id: "04",
             title: "ToDo List - TaskMap",
             description: "Aplicação web de lista de tarefas desenvolvida com React, Node.js e MongoDB. Permite aos usuários organizar, criar, editar e excluir tarefas de forma simples e eficiente.",
             icons: [reactLogo, nodeJsLogo, mongoDbLogo],

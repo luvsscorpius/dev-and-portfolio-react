@@ -37,7 +37,7 @@ export const projectsFlowContainer = styled.div`
 
     @media (min-width: 1024px) {
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         gap: 20px;
         padding: 30px;
         max-width: 80%;
