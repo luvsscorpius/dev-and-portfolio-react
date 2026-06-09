@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/dev-and-portfolio-react/static/css/main.f029a054.css",
-    "main.js": "/dev-and-portfolio-react/static/js/main.0afe1328.js",
+    "main.js": "/dev-and-portfolio-react/static/js/main.a9761745.js",
+    "static/media/MockupSalusLaboris.png": "/dev-and-portfolio-react/static/media/MockupSalusLaboris.e00141f7ee6c6deea558.png",
     "static/media/mockupMrMix.png": "/dev-and-portfolio-react/static/media/mockupMrMix.a9cceb8641ecb5282a4a.png",
     "static/media/mockupChicCloset.png": "/dev-and-portfolio-react/static/media/mockupChicCloset.457eaa0f553cf1125273.png",
     "static/media/mockupTaskMap.png": "/dev-and-portfolio-react/static/media/mockupTaskMap.1a623f8ef7b341420609.png",
     "static/media/profilePhoto.png": "/dev-and-portfolio-react/static/media/profilePhoto.840c3d1c7c126639095a.png",
+    "static/media/mysqlLogo.png": "/dev-and-portfolio-react/static/media/mysqlLogo.167c88550478e6f0f85c.png",
     "static/media/nodeJsLogo.png": "/dev-and-portfolio-react/static/media/nodeJsLogo.f078b41cc45010c50d54.png",
     "static/media/mongoDbLogo.png": "/dev-and-portfolio-react/static/media/mongoDbLogo.2d776ec0cdbcbdd079b3.png",
     "index.html": "/dev-and-portfolio-react/index.html",
     "static/media/bookNegative.svg": "/dev-and-portfolio-react/static/media/bookNegative.59e002995f87af4bf1252f700f076308.svg",
     "main.f029a054.css.map": "/dev-and-portfolio-react/static/css/main.f029a054.css.map",
-    "main.0afe1328.js.map": "/dev-and-portfolio-react/static/js/main.0afe1328.js.map"
+    "main.a9761745.js.map": "/dev-and-portfolio-react/static/js/main.a9761745.js.map"
   },
   "entrypoints": [
     "static/css/main.f029a054.css",
-    "static/js/main.0afe1328.js"
+    "static/js/main.a9761745.js"
   ]
 }
